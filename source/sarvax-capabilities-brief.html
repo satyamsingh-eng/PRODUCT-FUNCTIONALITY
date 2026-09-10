@@ -1754,12 +1754,12 @@
         </div>
 
         <!-- SLIDE 04 (ARCHITECTURE PROOF - SLIDE 4 IN REFERENCE) -->
-        <div class="deck-slide-card" data-action="smart-jump" data-target="diag-platform-arch" tabindex="0" role="link" aria-label="Open the platform architecture diagram">
+        <div class="deck-slide-card" data-action="smart-jump" data-target="diag-security-boundary" tabindex="0" role="link" aria-label="Open the data boundary diagram">
           <div class="slide-top">
             <div class="slide-pill-badge">
               <span>HOW IT IS CONTROLLED</span>
             </div>
-            <a href="#diag-platform-arch" class="slide-circle-btn" data-action="smart-jump" data-target="diag-platform-arch" aria-label="Open the platform architecture diagram">↗</a>
+            <a href="#diag-security-boundary" class="slide-circle-btn" data-action="smart-jump" data-target="diag-security-boundary" aria-label="Open the data boundary diagram">↗</a>
           </div>
           <div class="deck-card-body">
             <h3 class="deck-card-title">Clear responsibility <span class="two-tone-muted">from request to result.</span></h3>
@@ -2048,78 +2048,12 @@
       <div class="deck-section-title-wrap">
         <div>
           <h2 class="deck-section-title">System Architecture</h2>
-          <p class="deck-section-sub">Five focused visuals. Read them in order: operating model → workflow → parallel work → model choice → data boundary.</p>
+          <p class="deck-section-sub">Four focused visuals. Read them in order: operating model → workflow → parallel work → model choice → data boundary.</p>
         </div>
-        <span class="nav-pill">5 FOCUSED VIEWS</span>
+        <span class="nav-pill">4 FOCUSED VIEWS</span>
       </div>
 
-<!-- INFOGRAPHIC 1 -->
-      <div class="diagram-wrap" id="diag-platform-arch">
-<div class="diagram-header">
-<div class="diagram-badge">Architecture · Executive operating model</div>
-<h3 class="diagram-title">The operating model: ask → decide → act → prove</h3>
-<p class="diagram-subtitle">SARVAX turns an advisor request into controlled work. The system separates the work surface, the execution engine, the approval point, and the evidence record.</p>
-</div>
-<div class="diagram-canvas">
-<svg aria-labelledby="arch-v2-title arch-v2-desc" role="img" viewBox="0 0 1000 404" xmlns="http://www.w3.org/2000/svg">
-<title id="arch-v2-title">SARVAX executive operating model</title>
-<desc id="arch-v2-desc">Left-to-right operating model showing advisor surfaces, planning and context, specialist execution, human approval, and recorded delivery.</desc>
-<defs>
-<marker id="arch-v2-arrow" markerHeight="6" markerWidth="8" orient="auto" refX="7" refY="3"><polygon fill="#111111" points="0 0, 8 3, 0 6"/></marker>
-<marker id="arch-v2-soft-arrow" markerHeight="6" markerWidth="8" orient="auto" refX="7" refY="3"><polygon fill="#7A7D83" points="0 0, 8 3, 0 6"/></marker>
-</defs>
-<rect width="100%" height="100%" fill="#FFFFFF"/>
-<!-- Control boundary -->
-<rect x="292" y="32" width="416" height="236" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-dasharray="6 4"/>
-<rect x="308" y="24" width="180" height="16" rx="4" fill="#111111"/>
-<text fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" letter-spacing="0.08em" x="320" y="35">SARVAX CONTROLLED WORK</text>
-<!-- Connectors first -->
-<path d="M236 146 H264 Q272 146 272 138 V116 Q272 108 280 108 H320" fill="none" marker-end="url(#arch-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M456 108 H480 Q488 108 488 116 V146 Q488 154 496 154 H520" fill="none" marker-end="url(#arch-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M656 154 H680 Q688 154 688 146 V116 Q688 108 696 108 H720" fill="none" marker-end="url(#arch-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M816 188 V220 Q816 228 808 228 H720" fill="none" marker-end="url(#arch-v2-soft-arrow)" stroke="#7A7D83" stroke-dasharray="5 4" stroke-width="1.4"/>
-<!-- Connector labels, masked and separated -->
-<rect x="260" y="88" width="52" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" text-anchor="middle" x="286" y="98">REQUEST</text>
-<rect x="454" y="128" width="52" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" text-anchor="middle" x="480" y="138">PLAN</text>
-<rect x="660" y="88" width="52" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" text-anchor="middle" x="686" y="98">REVIEW</text>
-<rect x="820" y="190" width="76" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" text-anchor="middle" x="858" y="200">EVIDENCE</text>
-<!-- Nodes -->
-<rect x="36" y="92" width="200" height="108" rx="6" fill="#FFFFFF" stroke="#111111"/>
-<rect x="48" y="104" width="72" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="60" y="114">01 · SURFACE</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="16" font-weight="600" x="48" y="140">Advisor surfaces</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="48" y="158">Web workspace · mobile · schedule</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="48" y="176">The team asks, assigns, or triggers work.</text>
-
-<rect x="320" y="56" width="136" height="104" rx="6" fill="#FFFFFF" stroke="#111111"/>
-<rect x="332" y="68" width="52" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="344" y="78">02 · PLAN</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="13" font-weight="600" x="332" y="102">Plan &amp; context</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="332" y="122">Permissions, memory,</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="332" y="138">and task scope.</text>
-
-<rect x="520" y="56" width="136" height="104" rx="6" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
-<rect x="532" y="68" width="68" height="14" rx="2" fill="#E8E8E8"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="700" x="544" y="78">03 · EXECUTE</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="13" font-weight="600" x="532" y="102">Specialist work</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="532" y="122">Agents, workflows,</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="532" y="138">calculations, live tools.</text>
-
-<rect x="720" y="56" width="160" height="104" rx="6" fill="#FFFFFF" stroke="#111111"/>
-<rect x="732" y="68" width="76" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="744" y="78">04 · APPROVE</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="13" font-weight="600" x="732" y="102">Human control</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="732" y="122">Review, edit, approve,</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="732" y="138">or stop sensitive work.</text>
-
-<rect x="520" y="204" width="360" height="64" rx="6" fill="#FFFFFF" stroke="#111111"/>
-<rect x="532" y="216" width="84" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="544" y="226">05 · OUTPUT</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="13" font-weight="600" x="532" y="248">Approved action + evidence trail</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="532" y="262">CRM update, document, message, or advisor-ready answer.</text>
-<!-- Footer -->
-<line stroke="#E2E4E8" x1="36" x2="964" y1="304" y2="304"/>
-<text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.12em" x="40" y="328">BOARD READING</text>
-<text fill="#111111" font-family="system-ui, sans-serif" font-size="10" x="160" y="328">SARVAX automates preparation and execution; the firm retains the approval decision.</text>
-<text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="160" y="348">Connected portfolio data is accessed for the task and SARVAX is not a second portfolio database.</text>
-</svg>
-</div>
-</div>
+      <!-- INFOGRAPHIC 1 removed: user requested removal -->
 
 <!-- INFOGRAPHIC 2 -->
       <div class="diagram-wrap" id="diag-wealth-flow">

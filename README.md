@@ -4,11 +4,9 @@ SARVAX executive product surface for wealth-management teams.
 
 ## Included
 
-- `source/sarvax-capabilities-brief.html` — executive pitch deck, agent catalogue, connected capability map, five architecture diagrams, 39 capability records, search, filters, modal detail views, and previous/next navigation.
+- `source/sarvax-capabilities-brief.html` — executive pitch deck, agent catalogue, connected capability map, four focused system architecture diagrams, five agent process diagrams, 39 capability records, search, filters, modal detail views, and previous/next navigation.
 - `source/sarvax-roadmap.html` — 65-item platform and business delivery roadmap.
-- `data/` — roadmap records, tracker snapshots, modal data, and validation utilities.
-- `research/` — product and operating context used by the pages.
-- `analysis/` — product-scope and interface audit notes.
+- `data/roadmap-modal-data.js`, `data/roadmap-modal.css`, `data/roadmap-modal.js` — roadmap runtime assets.
 
 ## Executive pitch deck
 
