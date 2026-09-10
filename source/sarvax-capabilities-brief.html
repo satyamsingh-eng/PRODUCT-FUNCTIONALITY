@@ -31,7 +31,7 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
     section { scroll-margin-top: 110px; }
     body {
       font-family: var(--font-sans);
@@ -54,7 +54,7 @@
       align-items: center;
       justify-content: space-between;
       min-width: 0;
-      background: rgba(248, 249, 250, 0.88);
+      background: rgba(248, 249, 250, 0.96);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid #E2E4E8;
@@ -146,6 +146,7 @@
     .nav-center-links {
       min-width: 0;
       flex: 1 1 auto;
+      margin-left: clamp(0.75rem, 1.5vw, 1.5rem);
       overflow-x: auto;
       scrollbar-width: none;
     }
