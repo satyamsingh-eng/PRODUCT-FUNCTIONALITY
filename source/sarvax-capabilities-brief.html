@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SARVAX Executive Pitch Deck · Platform Capabilities &amp; Operating Model</title>
+  <title>SARVAX Executive Pitch Deck · Platform Capabilities</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -151,25 +151,19 @@
     }
     .nav-center-links::-webkit-scrollbar { display: none; }
 
-    /* --- 8-CARD EXECUTIVE STORY (3-CARD READING RHYTHM) --- */
+    /* --- 8-CARD EXECUTIVE STORY (4 × 4 READING RHYTHM) --- */
     .executive-8-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1.5rem;
       margin-bottom: 3.5rem;
-    }
-    .executive-8-grid .deck-slide-card:nth-child(7) {
-      grid-column: 1 / 2;
     }
     .executive-8-grid .deck-slide-card {
       min-height: 520px;
     }
-    @media (max-width: 1080px) {
+    @media (max-width: 1240px) {
       .executive-8-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .executive-8-grid .deck-slide-card:nth-child(7) {
-        grid-column: auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
     @media (max-width: 680px) {
@@ -538,6 +532,109 @@
       height: auto;
       display: block;
       min-width: 760px;
+    }
+    .security-flow-mobile {
+      display: none;
+    }
+    @media (max-width: 680px) {
+      .diagram-canvas {
+        overflow: visible;
+      }
+      .diagram-canvas > svg {
+        display: none;
+      }
+      .security-flow-mobile {
+        display: grid;
+        gap: 0.55rem;
+        padding: 0.25rem 0.75rem 0;
+      }
+      .security-flow-mobile-source,
+      .security-flow-mobile-step {
+        background: #FFFFFF;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        padding: 0.8rem;
+      }
+      .security-flow-mobile-source {
+        border-width: 1.5px;
+      }
+      .security-flow-mobile-boundary {
+        display: grid;
+        gap: 0.55rem;
+        padding: 0.8rem;
+        background: #F3F4F6;
+        border: 1px dashed #D1D5DB;
+        border-radius: 8px;
+      }
+      .security-flow-mobile-boundary-label,
+      .security-flow-mobile-kicker,
+      .security-flow-mobile-note-label {
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .security-flow-mobile-boundary-label {
+        display: inline-block;
+        width: fit-content;
+        padding: 0.28rem 0.45rem;
+        color: #FFFFFF;
+        background: #111111;
+        border-radius: 4px;
+      }
+      .security-flow-mobile-intro,
+      .security-flow-mobile-copy {
+        margin: 0;
+        color: var(--ink-muted);
+        font-size: 0.78rem;
+        line-height: 1.45;
+      }
+      .security-flow-mobile-title {
+        margin: 0.35rem 0 0;
+        color: var(--ink);
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+      .security-flow-mobile-kicker {
+        color: var(--ink-muted);
+      }
+      .security-flow-mobile-arrow {
+        color: var(--ink);
+        font-family: var(--font-mono);
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+      }
+      .security-flow-mobile-rule {
+        margin: 0;
+        padding: 0.7rem;
+        color: #FFFFFF;
+        background: #111111;
+        border-radius: 4px;
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        line-height: 1.4;
+        text-align: center;
+      }
+      .security-flow-mobile-notes {
+        display: grid;
+        gap: 0.65rem;
+        padding: 0.5rem 0.15rem 0;
+      }
+      .security-flow-mobile-note {
+        display: grid;
+        grid-template-columns: 5.2rem 1fr;
+        gap: 0.7rem;
+        align-items: start;
+      }
+      .security-flow-mobile-note-label {
+        color: var(--ink-muted);
+      }
+      .security-flow-mobile-note-copy {
+        color: var(--ink);
+        font-size: 0.78rem;
+        line-height: 1.45;
+      }
     }
 
     /* --- INTERACTIVE CAPABILITY INSPECTOR SECTION --- */
@@ -1639,7 +1736,6 @@
       </a>
       <nav class="nav-center-links">
         <a href="#deck-overview" class="nav-link">Executive Pitch Deck</a>
-        <a href="#architecture-schematics" class="nav-link">Operating Model</a>
         <a href="#wealthtech-pipeline" class="nav-link">Wealth Management</a>
         <a href="#agent-catalogue" class="nav-link">Agent Catalogue</a>
         <a href="#interactive-inspector" class="nav-link">39 Capabilities</a>
@@ -2099,19 +2195,17 @@
 </div>
     </section>
 
-    <!-- SECTION 4: 39 CAPABILITY MODULES (INTERACTIVE INSPECTOR) -->    </section>
-
     <!-- SECTION 4: 39 CAPABILITY MODULES (INTERACTIVE INSPECTOR) -->
     <section class="interactive-explorer-section" id="interactive-inspector">
       <div class="deck-section-title-wrap">
         <div>
-          <h2 class="deck-section-title">All 39 Capabilities</h2>
-          <p class="deck-section-sub">A clear map of the work SARVAX can support for a wealth-management firm—what it does, why it matters, how it is used, and where it stands today.</p>
+          <h2 class="deck-section-title">39 Curated Platform Capabilities</h2>
+          <p class="deck-section-sub">A curated map of the work SARVAX can support for a wealth-management firm—what it does, why it matters, how it is used, and where each capability stands in this catalogue. The separate roadmap covers delivery across platform and business workstreams.</p>
           <div class="dir-stats">
-            <span class="dir-stat"><b>39</b> Capabilities</span>
+            <span class="dir-stat"><b>39</b> Curated capabilities</span>
             <span class="dir-stat stat-live"><b>29</b> Catalogued as Live</span>
             <span class="dir-stat stat-dev"><b>10</b> In Development / Roadmap</span>
-            <span class="dir-stat src">Source of truth · Usecase Tracker</span>
+            <span class="dir-stat src">Scope · Curated catalogue · Delivery status on Product Roadmap</span>
           </div>
         </div>
         <span class="nav-pill">39 CAPABILITY DIRECTORY</span>
@@ -7848,34 +7942,144 @@
 
       <!-- INFOGRAPHIC 5 -->
       <div class="diagram-wrap" id="diag-security-boundary">
-<div class="diagram-header">
-<div class="diagram-badge">Data boundary · Governance and evidence</div>
-<h3 class="diagram-title">Where firm data moves — and where control sits</h3>
-<p class="diagram-subtitle">The platform connects to firm systems through permissions, performs the requested work, and records the decision path without becoming a second portfolio database.</p>
-</div>
-<div class="diagram-canvas">
-<svg aria-labelledby="security-v2-title security-v2-desc" role="img" viewBox="0 0 1000 376" xmlns="http://www.w3.org/2000/svg">
-<title id="security-v2-title">SARVAX data boundary and governance flow</title>
-<desc id="security-v2-desc">Four-stage data boundary showing firm systems, permission gate, bounded task execution, and an evidence record for approved outputs.</desc>
-<defs><marker id="security-v2-arrow" markerHeight="6" markerWidth="8" orient="auto" refX="7" refY="3"><polygon fill="#111111" points="0 0, 8 3, 0 6"/></marker></defs>
-<rect width="100%" height="100%" fill="#FFFFFF"/>
-<!-- Boundary -->
-<rect x="292" y="32" width="672" height="248" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-dasharray="6 4"/><rect x="308" y="24" width="188" height="16" rx="4" fill="#111111"/><text fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="320" y="35">SARVAX CONTROL BOUNDARY</text>
-<!-- Connectors -->
-<path d="M252 156 H292" fill="none" marker-end="url(#security-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M504 156 H540 Q548 156 548 148 V120 Q548 112 556 112 H588" fill="none" marker-end="url(#security-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M756 112 H792 Q800 112 800 120 V156 Q800 164 808 164 H840" fill="none" marker-end="url(#security-v2-arrow)" stroke="#111111" stroke-width="1.6"/>
-<path d="M756 200 H792 Q800 200 800 208 V236 Q800 244 808 244 H840" fill="none" marker-end="url(#security-v2-arrow)" stroke="#7A7D83" stroke-dasharray="5 4" stroke-width="1.4"/>
-<rect x="256" y="136" width="64" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="288" y="146" text-anchor="middle">PERMISSION</text><rect x="512" y="88" width="52" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="538" y="98" text-anchor="middle">FETCH</text><rect x="780" y="88" width="64" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="812" y="98" text-anchor="middle">OUTPUT</text><rect x="780" y="220" width="72" height="14" rx="2" fill="#FFFFFF" stroke="#D1D5DB"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="816" y="230" text-anchor="middle">EVIDENCE</text>
-<!-- Nodes -->
-<rect x="36" y="104" width="216" height="104" rx="6" fill="#FFFFFF" stroke="#111111"/><rect x="48" y="116" width="80" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="60" y="126">FIRM SYSTEMS</text><text fill="#111111" font-family="system-ui, sans-serif" font-size="14" font-weight="600" x="48" y="150">CRM, PMS, files, messages</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="48" y="170">The firm remains the source of truth.</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="48" y="188">Access is task- and role-scoped.</text>
-<rect x="300" y="104" width="204" height="104" rx="6" fill="#FFFFFF" stroke="#111111"/><rect x="312" y="116" width="72" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="324" y="126">ACCESS GATE</text><text fill="#111111" font-family="system-ui, sans-serif" font-size="14" font-weight="600" x="312" y="150">Identity + permissions</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="312" y="170">who can run what, for whom,</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="312" y="188">and with which connection.</text>
-<rect x="588" y="68" width="168" height="112" rx="6" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><rect x="600" y="80" width="72" height="14" rx="2" fill="#E8E8E8"/><text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="700" x="612" y="90">LIVE WORK</text><text fill="#111111" font-family="system-ui, sans-serif" font-size="14" font-weight="600" x="600" y="116">Bounded execution</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="600" y="136">fetch only what the task</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="600" y="152">needs; apply workflow rules.</text><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="600" y="170">NOT A SECOND PORTFOLIO DB</text>
-<rect x="840" y="136" width="124" height="112" rx="6" fill="#FFFFFF" stroke="#111111"/><rect x="852" y="148" width="60" height="14" rx="2" fill="#E8E8E8"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="864" y="158">RECORD</text><text fill="#111111" font-family="system-ui, sans-serif" font-size="14" font-weight="600" x="852" y="184">Evidence trail</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="852" y="204">run, inputs, checks,</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="852" y="220">approval, output.</text>
-<line stroke="#E2E4E8" x1="36" x2="964" y1="312" y2="312"/><text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.12em" x="40" y="332">EVIDENCE BOUNDARY</text><text fill="#111111" font-family="system-ui, sans-serif" font-size="10" x="180" y="332">The diagram explains the intended control path; connector availability, retention, and certification remain capability-specific checks.</text><text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="180" y="352">The record supports review and readiness work; it does not by itself claim a completed SOC 2 certification.</text>
-</svg>
-</div>
-</div>
+        <div class="diagram-header">
+          <div class="diagram-badge">Data boundary · Governance and evidence</div>
+          <h3 class="diagram-title">Where firm data moves — and where control sits</h3>
+          <p class="diagram-subtitle">The firm keeps the source data. SARVAX checks access, takes only what the task needs, does the work, returns the result, and records the path. SARVAX is not a second portfolio database.</p>
+        </div>
+        <div class="diagram-canvas">
+          <svg aria-labelledby="security-v3-title security-v3-desc" role="img" viewBox="0 0 1000 478" xmlns="http://www.w3.org/2000/svg">
+            <title id="security-v3-title">Simple SARVAX data boundary flow</title>
+            <desc id="security-v3-desc">Firm systems connect to SARVAX through an access check. SARVAX takes only the information needed for the task, does the work, supports human review, returns the result, and records the evidence.</desc>
+            <defs>
+              <marker id="security-v3-arrow" markerHeight="6" markerWidth="8" orient="auto" refX="7" refY="3">
+                <polygon fill="#111111" points="0 0, 8 3, 0 6"/>
+              </marker>
+            </defs>
+            <rect width="100%" height="100%" fill="#FFFFFF"/>
+
+            <!-- The firm remains outside the SARVAX work boundary. -->
+            <rect x="218" y="44" width="746" height="312" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-dasharray="6 4"/>
+            <rect x="238" y="36" width="214" height="16" rx="4" fill="#111111"/>
+            <text fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="250" y="47">SARVAX CONTROL BOUNDARY</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="238" y="72">SARVAX works only inside this approved path.</text>
+
+            <!-- Flow arrows: source → check → take → work → review → record. -->
+            <path d="M196 198 H238" fill="none" marker-end="url(#security-v3-arrow)" stroke="#111111" stroke-width="1.6"/>
+            <path d="M358 198 H382" fill="none" marker-end="url(#security-v3-arrow)" stroke="#111111" stroke-width="1.6"/>
+            <path d="M502 198 H526" fill="none" marker-end="url(#security-v3-arrow)" stroke="#111111" stroke-width="1.6"/>
+            <path d="M646 198 H670" fill="none" marker-end="url(#security-v3-arrow)" stroke="#111111" stroke-width="1.6"/>
+            <path d="M790 198 H814" fill="none" marker-end="url(#security-v3-arrow)" stroke="#111111" stroke-width="1.6"/>
+
+            <!-- Firm source of truth. -->
+            <rect x="28" y="132" width="168" height="132" rx="6" fill="#FFFFFF" stroke="#111111" stroke-width="1.4"/>
+            <rect x="40" y="144" width="92" height="14" rx="2" fill="#E8E8E8"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="52" y="154">FIRM SYSTEMS</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="13" font-weight="700" x="40" y="182">Source of truth</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="40" y="204">CRM, PMS, files</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="40" y="222">The firm keeps</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="40" y="238">the original data.</text>
+
+            <!-- SARVAX flow steps. -->
+            <rect x="238" y="126" width="120" height="146" rx="6" fill="#FFFFFF" stroke="#111111"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="250" y="146">01 · CHECK</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="12" font-weight="700" x="250" y="174">Access</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="250" y="198">Role + task</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="250" y="216">Who can run</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="250" y="232">this job?</text>
+
+            <rect x="382" y="126" width="120" height="146" rx="6" fill="#FFFFFF" stroke="#111111"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="394" y="146">02 · TAKE</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="12" font-weight="700" x="394" y="174">Needed data</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="394" y="198">Only what</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="394" y="216">the task</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="394" y="232">requires.</text>
+
+            <rect x="526" y="126" width="120" height="146" rx="6" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+            <text fill="#111111" font-family="'Geist Mono', monospace" font-size="8" font-weight="700" x="538" y="146">03 · WORK</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="12" font-weight="700" x="538" y="174">Do the job</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="538" y="198">Use the</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="538" y="216">approved</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="538" y="232">workflow.</text>
+
+            <rect x="670" y="126" width="120" height="146" rx="6" fill="#FFFFFF" stroke="#111111"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="682" y="146">04 · REVIEW</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="12" font-weight="700" x="682" y="174">Human check</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="682" y="198">Review or</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="682" y="216">approve</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="682" y="232">sensitive work.</text>
+
+            <rect x="814" y="126" width="130" height="146" rx="6" fill="#FFFFFF" stroke="#111111"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" x="826" y="146">05 · RETURN</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="12" font-weight="700" x="826" y="174">Result + record</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="826" y="198">Return the</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="826" y="216">output and</text>
+            <text fill="#55565A" font-family="system-ui, sans-serif" font-size="10" x="826" y="232">decision path.</text>
+
+            <rect x="428" y="300" width="326" height="24" rx="4" fill="#111111"/>
+            <text fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="9" font-weight="600" x="591" y="316" text-anchor="middle">SARVAX IS NOT A SECOND PORTFOLIO DATABASE</text>
+
+            <!-- Plain-English control notes. -->
+            <line stroke="#E2E4E8" x1="28" x2="964" y1="382" y2="382"/>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.12em" x="28" y="404">CONTROL RULE</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="10" x="142" y="404">The firm keeps the source data. SARVAX uses approved access, returns the result, and records how the work was done.</text>
+            <text fill="#55565A" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.12em" x="28" y="432">CHECKS</text>
+            <text fill="#111111" font-family="system-ui, sans-serif" font-size="10" x="142" y="432">Connections, retention, and certification are checked for each capability.</text>
+          </svg>
+          <div class="security-flow-mobile" aria-label="Mobile data boundary flow">
+            <div class="security-flow-mobile-source">
+              <div class="security-flow-mobile-kicker">Firm systems</div>
+              <h4 class="security-flow-mobile-title">Source of truth</h4>
+              <p class="security-flow-mobile-copy">CRM, PMS, and files stay with the firm. The firm keeps the original data.</p>
+            </div>
+            <div class="security-flow-mobile-arrow" aria-hidden="true">↓</div>
+            <div class="security-flow-mobile-boundary">
+              <div class="security-flow-mobile-boundary-label">SARVAX control boundary</div>
+              <p class="security-flow-mobile-intro">SARVAX works only inside this approved path.</p>
+              <div class="security-flow-mobile-step">
+                <div class="security-flow-mobile-kicker">01 · Check access</div>
+                <h4 class="security-flow-mobile-title">Who can run this job?</h4>
+                <p class="security-flow-mobile-copy">The role and the task are checked first.</p>
+              </div>
+              <div class="security-flow-mobile-arrow" aria-hidden="true">↓</div>
+              <div class="security-flow-mobile-step">
+                <div class="security-flow-mobile-kicker">02 · Take what is needed</div>
+                <h4 class="security-flow-mobile-title">Only the task data</h4>
+                <p class="security-flow-mobile-copy">SARVAX takes only the information required for the job.</p>
+              </div>
+              <div class="security-flow-mobile-arrow" aria-hidden="true">↓</div>
+              <div class="security-flow-mobile-step">
+                <div class="security-flow-mobile-kicker">03 · Do the work</div>
+                <h4 class="security-flow-mobile-title">Use the approved workflow</h4>
+                <p class="security-flow-mobile-copy">The requested work follows the agreed process.</p>
+              </div>
+              <div class="security-flow-mobile-arrow" aria-hidden="true">↓</div>
+              <div class="security-flow-mobile-step">
+                <div class="security-flow-mobile-kicker">04 · Human check</div>
+                <h4 class="security-flow-mobile-title">Review sensitive work</h4>
+                <p class="security-flow-mobile-copy">A person can review or approve the result where needed.</p>
+              </div>
+              <div class="security-flow-mobile-arrow" aria-hidden="true">↓</div>
+              <div class="security-flow-mobile-step">
+                <div class="security-flow-mobile-kicker">05 · Return and record</div>
+                <h4 class="security-flow-mobile-title">Result + decision path</h4>
+                <p class="security-flow-mobile-copy">The output is returned and the work path is recorded.</p>
+              </div>
+              <p class="security-flow-mobile-rule">SARVAX is not a second portfolio database.</p>
+            </div>
+            <div class="security-flow-mobile-notes">
+              <div class="security-flow-mobile-note">
+                <div class="security-flow-mobile-note-label">Control rule</div>
+                <div class="security-flow-mobile-note-copy">The firm keeps the source data. SARVAX uses approved access, returns the result, and records how the work was done.</div>
+              </div>
+              <div class="security-flow-mobile-note">
+                <div class="security-flow-mobile-note-label">Checks</div>
+                <div class="security-flow-mobile-note-copy">Connections, retention, and certification are checked for each capability.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->

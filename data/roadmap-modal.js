@@ -94,14 +94,19 @@
     return map;
   }
   async function refreshTracker() {
-    var trackerUrl = window.location.protocol === 'file:' ? 'http://127.0.0.1:8765/tracker-live.json?ts=' + Date.now() : '../data/tracker-live.json?ts=' + Date.now();
+    // Public Pages has no private tracker snapshot. Use the validated embedded
+    // record set there; local file previews may still read the live bridge.
+    if (window.location.protocol !== 'file:') {
+      return {map: fallbackTrackerMap(), syncedAt: 'Embedded report snapshot', source: 'Validated report data'};
+    }
+    var trackerUrl = 'http://127.0.0.1:8765/tracker-live.json?ts=' + Date.now();
     try {
       var response = await fetch(trackerUrl, {cache:'no-store'});
       if (!response.ok) throw new Error('tracker snapshot returned ' + response.status);
       var payload = await response.json();
-      return {map: buildTrackerMap(payload), syncedAt: payload.synced_at || 'Tracker snapshot', source: window.location.protocol === 'file:' ? 'Live Siddhi tracker bridge' : 'Siddhi tracker snapshot'};
+      return {map: buildTrackerMap(payload), syncedAt: payload.synced_at || 'Tracker snapshot', source: 'Live Siddhi tracker bridge'};
     } catch (e) {
-      return {map: fallbackTrackerMap(), syncedAt: 'Last verified local snapshot', source: 'File preview fallback — run sync_tracker.py to refresh'};
+      return {map: fallbackTrackerMap(), syncedAt: 'Last verified local snapshot', source: 'Validated embedded report data'};
     }
   }
   function getItem(card, sync) {
