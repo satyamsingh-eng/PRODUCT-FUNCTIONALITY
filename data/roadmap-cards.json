@@ -1,0 +1,841 @@
+[
+  {
+    "name": "OneChat",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Unified AI workspace for conversations, tasks, files, and enterprise knowledge.",
+    "descs": [
+      "Unified AI workspace for conversations, tasks, files, and enterprise knowledge."
+    ],
+    "note_len": 79
+  },
+  {
+    "name": "Aura \u2014 AI Chief of Staff",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "AI executive assistant for planning, execution, and intelligent task management.",
+    "descs": [
+      "AI executive assistant for planning, execution, and intelligent task management."
+    ],
+    "note_len": 80
+  },
+  {
+    "name": "Workflow Builder V2",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "No-code workflow builder to automate business processes using AI.",
+    "descs": [
+      "No-code workflow builder to automate business processes using AI."
+    ],
+    "note_len": 65
+  },
+  {
+    "name": "Skills Directory",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Central repository of reusable AI skills and business automations.",
+    "descs": [
+      "Central repository of reusable AI skills and business automations."
+    ],
+    "note_len": 66
+  },
+  {
+    "name": "Connectors & Integrations",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Pre-built and custom integrations with enterprise applications and third-party tools.",
+    "descs": [
+      "Pre-built and custom integrations with enterprise applications and third-party tools."
+    ],
+    "note_len": 85
+  },
+  {
+    "name": "Custom MCP Servers",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Support for custom Model Context Protocol (MCP) servers and enterprise data sources.",
+    "descs": [
+      "Support for custom Model Context Protocol (MCP) servers and enterprise data sources."
+    ],
+    "note_len": 84
+  },
+  {
+    "name": "Agent Builder (Single Agent)",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Build, configure, and deploy individual AI agents for specific business use cases.",
+    "descs": [
+      "Build, configure, and deploy individual AI agents for specific business use cases."
+    ],
+    "note_len": 82
+  },
+  {
+    "name": "Projects & Knowledge Context",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Organize projects with contextual knowledge, files, and AI memory.",
+    "descs": [
+      "Organize projects with contextual knowledge, files, and AI memory."
+    ],
+    "note_len": 66
+  },
+  {
+    "name": "Meetings & Calendar Intelligence",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "AI-powered meeting recording, transcription, summaries, and calendar intelligence.",
+    "descs": [
+      "AI-powered meeting recording, transcription, summaries, and calendar intelligence."
+    ],
+    "note_len": 82
+  },
+  {
+    "name": "Scheduler & Automation",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Automate recurring tasks, reminders, approvals, and scheduled workflows.",
+    "descs": [
+      "Automate recurring tasks, reminders, approvals, and scheduled workflows."
+    ],
+    "note_len": 72
+  },
+  {
+    "name": "Memory & Personalisation",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Persistent memory that personalizes AI responses using user and organizational context.",
+    "descs": [
+      "Persistent memory that personalizes AI responses using user and organizational context."
+    ],
+    "note_len": 87
+  },
+  {
+    "name": "Documents, Files & Artifacts",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Centralized management and AI processing of documents, files, and generated artifacts.",
+    "descs": [
+      "Centralized management and AI processing of documents, files, and generated artifacts."
+    ],
+    "note_len": 86
+  },
+  {
+    "name": "Browser Extension / Meeting Assistant",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Browser extension for capturing meetings, web context, and AI assistance.",
+    "descs": [
+      "Browser extension for capturing meetings, web context, and AI assistance."
+    ],
+    "note_len": 73
+  },
+  {
+    "name": "Human-in-the-Loop Controls",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Human approval checkpoints for sensitive AI actions and enterprise governance.",
+    "descs": [
+      "Human approval checkpoints for sensitive AI actions and enterprise governance."
+    ],
+    "note_len": 78
+  },
+  {
+    "name": "Model Choice & AI Engine",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Support for multiple LLM providers with intelligent model selection and routing.",
+    "descs": [
+      "Support for multiple LLM providers with intelligent model selection and routing."
+    ],
+    "note_len": 80
+  },
+  {
+    "name": "Billing, Credits & Analytics",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Manage subscriptions, AI credits, usage analytics, and billing insights.",
+    "descs": [
+      "Manage subscriptions, AI credits, usage analytics, and billing insights."
+    ],
+    "note_len": 72
+  },
+  {
+    "name": "Delivery Channels & Surface",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Access the platform across web, desktop, mobile, APIs, and communication channels.",
+    "descs": [
+      "Access the platform across web, desktop, mobile, APIs, and communication channels."
+    ],
+    "note_len": 82
+  },
+  {
+    "name": "Platform Reliability & Trust",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Enterprise-grade security, reliability, monitoring, compliance, and platform governance.",
+    "descs": [
+      "Enterprise-grade security, reliability, monitoring, compliance, and platform governance."
+    ],
+    "note_len": 88
+  },
+  {
+    "name": "Human-in-the-Loop Approval Gate",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Human approval required before AI executes sensitive or high-impact business actions.",
+    "descs": [
+      "Human approval required before AI executes sensitive or high-impact business actions."
+    ],
+    "note_len": 85
+  },
+  {
+    "name": "Automatic Model Selection",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "RIA",
+    "note": "Automatically choose the most suitable AI model for every business task.",
+    "descs": [
+      "Automatically choose the most suitable AI model for every business task."
+    ],
+    "note_len": 72
+  },
+  {
+    "name": "Company Knowledge Center",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Shubham",
+    "note": "Centralized repository for organizational knowledge, documents, policies, and business information.",
+    "descs": [
+      "Centralized repository for organizational knowledge, documents, policies, and business information."
+    ],
+    "note_len": 99
+  },
+  {
+    "name": "Audit & Observability",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Shubham",
+    "note": "Monitor platform health, performance metrics, logs, and operational activities centrally.",
+    "descs": [
+      "Monitor platform health, performance metrics, logs, and operational activities centrally."
+    ],
+    "note_len": 89
+  },
+  {
+    "name": "Platform Health Dashboard",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Manjil",
+    "note": "",
+    "descs": [],
+    "note_len": 0
+  },
+  {
+    "name": "Agent Registry",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Central catalog to discover, organize, and manage enterprise AI agents.",
+    "descs": [
+      "Central catalog to discover, organize, and manage enterprise AI agents."
+    ],
+    "note_len": 71
+  },
+  {
+    "name": "Tenant Isolation",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Ayanabha,Manjil",
+    "note": "Securely isolate customer data, configurations, and workloads across multiple tenants.",
+    "descs": [
+      "Securely isolate customer data, configurations, and workloads across multiple tenants."
+    ],
+    "note_len": 86
+  },
+  {
+    "name": "Self-Learning Agents",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "RIA",
+    "note": "Enable AI systems to continuously improve through learning from interactions and feedback.",
+    "descs": [
+      "Enable AI systems to continuously improve through learning from interactions and feedback."
+    ],
+    "note_len": 90
+  },
+  {
+    "name": "MCP Knowledge Server",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Deviprasad,Naman",
+    "note": "Access enterprise knowledge securely through standardized MCP-based integrations and services.",
+    "descs": [
+      "Access enterprise knowledge securely through standardized MCP-based integrations and services."
+    ],
+    "note_len": 94
+  },
+  {
+    "name": "Autonomous Self-Improving Agents",
+    "status": "DELIVERED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "RIA",
+    "note": "Build autonomous AI agents capable of learning and improving independently over time.",
+    "descs": [
+      "Build autonomous AI agents capable of learning and improving independently over time."
+    ],
+    "note_len": 85
+  },
+  {
+    "name": "WhatsApp Automation",
+    "status": "DELIVERED",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "",
+    "owner": "Siddhi, Deviprasad,Ayanabha",
+    "note": "Automate customer communication, notifications, workflows, and document collection through WhatsApp.",
+    "descs": [
+      "Automate customer communication, notifications, workflows, and document collection through WhatsApp."
+    ],
+    "note_len": 100
+  },
+  {
+    "name": "Salesforce FSC Integration",
+    "status": "DELIVERED",
+    "track": "Business",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "",
+    "note": "Integrate financial CRM systems to streamline client relationship management processes.",
+    "descs": [
+      "Integrate financial CRM systems to streamline client relationship management processes."
+    ],
+    "note_len": 87
+  },
+  {
+    "name": "White Label Platform",
+    "status": "DELIVERED",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "8/26/2026",
+    "owner": "Ayan , shubham",
+    "note": "Allow customers to fully customize branding, interface, and user experience.",
+    "descs": [
+      "Allow customers to fully customize branding, interface, and user experience."
+    ],
+    "note_len": 76
+  },
+  {
+    "name": "Enterprise AI Provider Access",
+    "status": "DELIVERED",
+    "track": "Business",
+    "ver": "V1.0",
+    "eta": "Delivered",
+    "owner": "RIA",
+    "note": "Provide secure access to multiple enterprise-grade large language models.",
+    "descs": [
+      "Provide secure access to multiple enterprise-grade large language models."
+    ],
+    "note_len": 73
+  },
+  {
+    "name": "Financial Planning Agent",
+    "status": "DELIVERED",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "8/21/2026",
+    "owner": "Siddhi,Zainab",
+    "note": "",
+    "descs": [],
+    "note_len": 0
+  },
+  {
+    "name": "Morningstar Integration",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "8/31/2026",
+    "owner": "Siddhi, Manjil",
+    "note": "Integrate leading wealth data providers for real-time financial information and insights.",
+    "descs": [
+      "Integrate leading wealth data providers for real-time financial information and insights."
+    ],
+    "note_len": 89
+  },
+  {
+    "name": "SOC 2 Type II Compliance",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "15th sept",
+    "owner": "Ayan, Ashish",
+    "note": "Achieve enterprise-grade security compliance through industry-standard certifications and best practices.",
+    "descs": [
+      "Achieve enterprise-grade security compliance through industry-standard certifications and best practices."
+    ],
+    "note_len": 105
+  },
+  {
+    "name": "Wealth Management Bundles",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V1.0",
+    "eta": "8/28/2026",
+    "owner": "Deviprasad,Siddhi,Zainab",
+    "note": "Deliver pre-built AI solutions tailored for specific industries and business domains.",
+    "descs": [
+      "Deliver pre-built AI solutions tailored for specific industries and business domains."
+    ],
+    "note_len": 85
+  },
+  {
+    "name": "Mobile App",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "8/28/2026",
+    "owner": "Avanish,Harsh",
+    "note": "Discuss with sai on Monday",
+    "descs": [
+      "Discuss with sai on Monday"
+    ],
+    "note_len": 26
+  },
+  {
+    "name": "Meeting Intelligence Bot (Lightweight SARVAX)",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "9/2/2026",
+    "owner": "Mohit",
+    "note": "Automatic meeting capture \u2014 briefs before, actions after. Competitor-grade output at a fraction of the cost.",
+    "descs": [
+      "Automatic meeting capture \u2014 briefs before, actions after. Competitor-grade output at a fraction of the cost."
+    ],
+    "note_len": 108
+  },
+  {
+    "name": "Syntoniq",
+    "status": "IN PROGRESS",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "",
+    "owner": "Siddhi",
+    "note": "",
+    "descs": [],
+    "note_len": 0
+  },
+  {
+    "name": "Agent Dashboard",
+    "status": "IN DISCUSSION",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "8/28/2026",
+    "owner": "AYANABHA,Ria,Shubham(To be Assigned)",
+    "note": "Monitor AI usage, health, performance, and operational insights in real time.",
+    "descs": [
+      "Monitor AI usage, health, performance, and operational insights in real time."
+    ],
+    "note_len": 77
+  },
+  {
+    "name": "Continuous Learning Loop",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "In review",
+    "owner": "Ria,Mohit",
+    "note": "Continuously improve AI performance using user feedback and execution outcomes.",
+    "descs": [
+      "Continuously improve AI performance using user feedback and execution outcomes."
+    ],
+    "note_len": 79
+  },
+  {
+    "name": "Prompt Library",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "Ria",
+    "note": "Manage, version, and standardize prompts across teams and AI applications.",
+    "descs": [
+      "Manage, version, and standardize prompts across teams and AI applications."
+    ],
+    "note_len": 74
+  },
+  {
+    "name": "Production-Grade Platform Backbone",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "8/21/2026",
+    "owner": "Manjil",
+    "note": "Kafka- Implementing Kafka event bus between these two servers for production reliability",
+    "descs": [
+      "Kafka- Implementing Kafka event bus between these two servers for production reliability"
+    ],
+    "note_len": 88
+  },
+  {
+    "name": "Agent & Workflow Versioning Management",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "8/21/2026",
+    "owner": "Ayanabha, Shubham",
+    "note": "Track, version, and deploy AI agent updates with controlled release management.",
+    "descs": [
+      "Track, version, and deploy AI agent updates with controlled release management."
+    ],
+    "note_len": 79
+  },
+  {
+    "name": "Provider Policy Management",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "In review",
+    "owner": "Ria(To be assigned)",
+    "note": "Govern AI models through policies, access controls, compliance, and responsible usage.",
+    "descs": [
+      "Govern AI models through policies, access controls, compliance, and responsible usage."
+    ],
+    "note_len": 86
+  },
+  {
+    "name": "Evidence Timeline",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Manjil, Harsh, Deviprasad",
+    "note": "Maintain comprehensive records of AI activities, decisions, and user interactions.",
+    "descs": [
+      "Maintain comprehensive records of AI activities, decisions, and user interactions."
+    ],
+    "note_len": 82
+  },
+  {
+    "name": "Durable Run History",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "Shubham ,Ayanabha",
+    "note": "Store complete workflow execution history for auditing, tracking, and future analysis.",
+    "descs": [
+      "Store complete workflow execution history for auditing, tracking, and future analysis."
+    ],
+    "note_len": 86
+  },
+  {
+    "name": "Knowledge Verification Workflow",
+    "status": "COMMITTED",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "",
+    "note": "Ensure knowledge is reviewed and approved before becoming organization-wide reference.",
+    "descs": [
+      "Ensure knowledge is reviewed and approved before becoming organization-wide reference."
+    ],
+    "note_len": 86
+  },
+  {
+    "name": "Cost Controls",
+    "status": "IN RESEARCH",
+    "track": "Platform",
+    "ver": "V3.0",
+    "eta": "In review",
+    "owner": "Naman",
+    "note": "Optimize AI usage to reduce operational costs while maintaining performance.",
+    "descs": [
+      "Optimize AI usage to reduce operational costs while maintaining performance."
+    ],
+    "note_len": 76
+  },
+  {
+    "name": "Addepar Integration",
+    "status": "IN RESEARCH",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "",
+    "note": "Connect portfolio management platforms for investment monitoring and reporting workflows.",
+    "descs": [
+      "Connect portfolio management platforms for investment monitoring and reporting workflows."
+    ],
+    "note_len": 89
+  },
+  {
+    "name": "Zero-Latency Cascade Switcher",
+    "status": "IN RESEARCH",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "",
+    "note": "Route requests intelligently to deliver faster AI responses with optimal performance.",
+    "descs": [
+      "Route requests intelligently to deliver faster AI responses with optimal performance."
+    ],
+    "note_len": 85
+  },
+  {
+    "name": "Custom Domain AI Models",
+    "status": "IN RESEARCH",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "",
+    "note": "Build and fine-tune domain-specific small language models for specialized tasks.",
+    "descs": [
+      "Build and fine-tune domain-specific small language models for specialized tasks."
+    ],
+    "note_len": 80
+  },
+  {
+    "name": "WealthSpectrum Integration",
+    "status": "IN RESEARCH",
+    "track": "Business",
+    "ver": "V2.0",
+    "eta": "No communication yet",
+    "owner": "Siddhi",
+    "note": "Connect portfolio management systems to access client investment and holdings data.",
+    "descs": [
+      "Connect portfolio management systems to access client investment and holdings data."
+    ],
+    "note_len": 83
+  },
+  {
+    "name": "Wealth Management SLM",
+    "status": "IN RESEARCH",
+    "track": "Business",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "",
+    "note": "Develop AI models optimized specifically for wealth and financial services.",
+    "descs": [
+      "Develop AI models optimized specifically for wealth and financial services."
+    ],
+    "note_len": 75
+  },
+  {
+    "name": "Visual DAG Workflow Builder",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "Review- Tuesday 18th aug",
+    "owner": "Mohit",
+    "note": "Visually design AI workflows without coding using drag-and-drop components.",
+    "descs": [
+      "Visually design AI workflows without coding using drag-and-drop components."
+    ],
+    "note_len": 75
+  },
+  {
+    "name": "Interactive Chat Components",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "",
+    "note": "Deliver interactive AI responses with buttons, forms, cards, and dynamic content.",
+    "descs": [
+      "Deliver interactive AI responses with buttons, forms, cards, and dynamic content."
+    ],
+    "note_len": 81
+  },
+  {
+    "name": "Personal Knowledge Brain (User)",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "AYANABHA,Ria,Shubham(To be Assigned)",
+    "note": "Maintain personalized knowledge and preferences unique to each individual user.",
+    "descs": [
+      "Maintain personalized knowledge and preferences unique to each individual user."
+    ],
+    "note_len": 79
+  },
+  {
+    "name": "Regional AI Model Coverage",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V2.0",
+    "eta": "Delivered",
+    "owner": "RIA",
+    "note": "Support region-specific AI models to meet localization and regulatory requirements.",
+    "descs": [
+      "Support region-specific AI models to meet localization and regulatory requirements."
+    ],
+    "note_len": 83
+  },
+  {
+    "name": "Compliance & Audit Center",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "9/15/2026",
+    "owner": "Manjil,Avanish",
+    "note": "Monitor compliance status, risks, policies, and audit activities from one dashboard.",
+    "descs": [
+      "Monitor compliance status, risks, policies, and audit activities from one dashboard."
+    ],
+    "note_len": 84
+  },
+  {
+    "name": "Knowledge Drift Detection",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "",
+    "note": "Continuously monitor knowledge relevance and identify outdated organizational information.",
+    "descs": [
+      "Continuously monitor knowledge relevance and identify outdated organizational information."
+    ],
+    "note_len": 90
+  },
+  {
+    "name": "Self-Learning Skills",
+    "status": "FUTURE",
+    "track": "Platform",
+    "ver": "V1.0",
+    "eta": "",
+    "owner": "RIA",
+    "note": "Enhance AI skills continuously through learning, optimization, and usage analytics.",
+    "descs": [
+      "Enhance AI skills continuously through learning, optimization, and usage analytics."
+    ],
+    "note_len": 83
+  },
+  {
+    "name": "Enterprise Company Brain",
+    "status": "FUTURE",
+    "track": "Business",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "AYANABHA,Ria,Shubham(To be Assigned)",
+    "note": "Centralize organizational knowledge accessible securely across teams and AI agents.",
+    "descs": [
+      "Centralize organizational knowledge accessible securely across teams and AI agents."
+    ],
+    "note_len": 83
+  },
+  {
+    "name": "Hybrid Cloud Deployment",
+    "status": "FUTURE",
+    "track": "Business",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "",
+    "note": "Deploy the platform as a scalable, secure, enterprise-ready SaaS solution.",
+    "descs": [
+      "Deploy the platform as a scalable, secure, enterprise-ready SaaS solution."
+    ],
+    "note_len": 74
+  },
+  {
+    "name": "Bring Your Own AI Keys (BYOK)",
+    "status": "FUTURE",
+    "track": "Business",
+    "ver": "V3.0",
+    "eta": "8/31/2026",
+    "owner": "AYANABHA,Ria,Shubham(To be Assigned)",
+    "note": "Enable customers to securely manage and control their own API credentials (Only valid for SarvaX hosted solution, For privately deployed enviornment they already have their own keys).",
+    "descs": [
+      "Enable customers to securely manage and control their own API credentials (Only valid for SarvaX hosted solution, For privately deployed enviornment they already have their own keys)."
+    ],
+    "note_len": 183
+  },
+  {
+    "name": "Bring Your Own AI Models (BYOM)",
+    "status": "FUTURE",
+    "track": "Business",
+    "ver": "V3.0",
+    "eta": "",
+    "owner": "",
+    "note": "Allow customers to deploy and use their preferred proprietary AI models.",
+    "descs": [
+      "Allow customers to deploy and use their preferred proprietary AI models."
+    ],
+    "note_len": 72
+  }
+]

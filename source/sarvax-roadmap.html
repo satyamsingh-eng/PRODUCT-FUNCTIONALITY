@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SARVAX Product Roadmap · Q3–Q4 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --g05: #f5f5f5;
+    --g10: #e8e8e8;
+    --g20: #d4d4d4;
+    --g40: #9a9a9a;
+    --g60: #6b6b6b;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'Geist Mono', monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--white);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 2rem; }
+
+  /* ===== NAV ===== */
+  .rm-nav {
+    position: sticky; top: 16px; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--g20);
+    border-radius: 980px;
+    padding: 8px 18px;
+    margin: 2rem auto 0;
+    max-width: 1240px;
+  }
+  .rm-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--black); }
+  .rm-brand-title { font-size: 1rem; font-weight: 800; letter-spacing: -0.02em; }
+  .rm-pill {
+    font-family: var(--mono); font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--black); color: var(--white);
+    padding: 3px 9px; border-radius: 980px;
+  }
+  .rm-links { display: flex; gap: 1.25rem; }
+  .rm-link { font-size: 0.8rem; font-weight: 500; color: var(--g60); text-decoration: none; }
+  .rm-link:hover { color: var(--black); }
+  .rm-back {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.78rem; font-weight: 600;
+    background: var(--black); color: var(--white);
+    padding: 6px 14px; border-radius: 980px; text-decoration: none;
+  }
+  .rm-back:hover { opacity: 0.85; }
+
+  /* ===== HERO ===== */
+  .hero { padding: 5rem 0 3rem; border-bottom: 1px solid var(--g10); }
+  .hero-eyebrow {
+    font-family: var(--mono); font-size: 0.7rem; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--g60);
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 800;
+    letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 1rem;
+  }
+  .hero h1 .muted { color: var(--g40); font-weight: 300; }
+  .hero-sub { font-size: 1.05rem; color: var(--g60); max-width: 640px; margin-bottom: 2.5rem; }
+
+  .hero-stats { display: flex; flex-wrap: wrap; }
+  .hs {
+    padding: 0 2.2rem; border-left: 1px solid var(--g20);
+  }
+  .hs:first-child { padding-left: 0; border-left: none; }
+  .hs-val { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+  .hs-label {
+    font-family: var(--mono); font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--g60); margin-top: 6px;
+  }
+
+  /* ===== CONTROL BAR ===== */
+  .controls {
+    position: sticky; top: 84px; z-index: 90;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--g10);
+    padding: 0.9rem 0;
+    margin-bottom: 1rem;
+  }
+  .controls-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .seg {
+    display: inline-flex; background: var(--g05);
+    border: 1px solid var(--g10); padding: 4px; border-radius: 980px;
+  }
+  .seg button {
+    font-family: var(--sans); font-size: 0.78rem; font-weight: 500;
+    padding: 5px 14px; border-radius: 980px; border: none;
+    background: transparent; color: var(--g60); cursor: pointer;
+    transition: all 0.12s ease;
+  }
+  .seg button.active { background: var(--black); color: var(--white); font-weight: 700; }
+  .seg button:focus-visible { outline: 2px solid var(--black); outline-offset: 2px; }
+  .search-wrap { position: relative; flex: 1; max-width: 380px; min-width: 220px; }
+  .search-wrap input {
+    width: 100%; padding: 8px 14px 8px 34px; font-family: var(--sans);
+    font-size: 0.82rem; border-radius: 980px; border: 1px solid var(--g20);
+    background: var(--g05); outline: none; color: var(--black);
+  }
+  .search-wrap input:focus { background: var(--white); border-color: var(--black); }
+  .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--g60); }
+  .legend { display: flex; gap: 1rem; font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.06em; color: var(--g60); text-transform: uppercase; }
+  .legend span b { color: var(--black); }
+
+  /* ===== LANES ===== */
+  .lane { margin: 3.5rem 0; scroll-margin-top: 150px; }
+  .lane-head {
+    display: flex; align-items: baseline; gap: 0.9rem;
+    padding-bottom: 0.9rem; margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--black);
+  }
+  .lane-glyph { font-size: 1.1rem; line-height: 1; }
+  .lane-title { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; text-transform: uppercase; }
+  .lane-count {
+    font-family: var(--mono); font-size: 0.7rem; font-weight: 700;
+    background: var(--black); color: var(--white);
+    padding: 2px 9px; border-radius: 980px;
+  }
+  .lane-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ===== FEATURE CARD ===== */
+  .rc {
+    background: var(--white);
+    border: 1px solid var(--g20);
+    border-radius: 18px;
+    padding: 1.4rem 1.4rem 1.1rem;
+    display: flex; flex-direction: column; gap: 0.5rem;
+    transition: transform 0.14s ease, border-color 0.14s ease;
+  }
+  .rc:hover { transform: translateY(-2px); border-color: var(--black); }
+  .rc.biz { background: var(--g05); }
+  .rc-top { display: flex; align-items: center; gap: 8px; }
+  .rc-glyph { font-size: 0.8rem; }
+  .rc-status {
+    font-family: var(--mono); font-size: 0.6rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    border: 1px solid var(--black); padding: 2px 8px; border-radius: 980px;
+  }
+  .rc-track {
+    margin-left: auto; font-family: var(--mono); font-size: 0.58rem;
+    letter-spacing: 0.1em; color: var(--g40); font-weight: 600;
+  }
+  .rc-name { font-size: 1.02rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+  .rc-note { font-size: 0.82rem; color: var(--g60); line-height: 1.5; flex: 1; }
+  .rc-meta {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    padding-top: 0.7rem; margin-top: 0.2rem;
+    border-top: 1px solid var(--g10);
+    font-family: var(--mono); font-size: 0.64rem; color: var(--g60);
+    letter-spacing: 0.04em;
+  }
+  .rc-eta { color: var(--black); font-weight: 600; }
+  .rc-owner { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 160px; }
+  .rc-ver { margin-left: auto; border: 1px solid var(--g20); padding: 1px 7px; border-radius: 980px; }
+
+  /* hidden state for filters */
+  .rc[hidden] { display: none; }
+  .lane[hidden] { display: none; }
+
+  /* ===== TIMELINE STRIP ===== */
+  .timeline { margin: 4rem 0 2rem; }
+  .tl-title { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; text-transform: uppercase; border-bottom: 2px solid var(--black); padding-bottom: 0.9rem; margin-bottom: 2rem; }
+  .tl-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+  .tl-track::before {
+    content: ""; position: absolute; top: 7px; left: 0; right: 0;
+    height: 1px; background: var(--g20);
+  }
+  .tl-col { padding: 0 1.2rem; position: relative; }
+  .tl-col::before {
+    content: ""; position: absolute; top: 2px; left: 1.2rem;
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--white); border: 2px solid var(--black);
+  }
+  .tl-col.done::before { background: var(--black); }
+  .tl-phase { font-family: var(--mono); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 1.4rem 0 0.4rem; }
+  .tl-when { font-size: 0.95rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
+  .tl-items { font-size: 0.78rem; color: var(--g60); line-height: 1.7; }
+  .tl-items b { color: var(--black); font-weight: 600; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    margin-top: 5rem; padding: 2rem 0;
+    border-top: 1px solid var(--g10);
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: var(--mono); font-size: 0.7rem; color: var(--g60);
+    letter-spacing: 0.04em;
+  }
+  footer .ast { font-size: 0.9rem; color: var(--black); }
+
+  @media (max-width: 900px) {
+    .tl-track { grid-template-columns: 1fr 1fr; }
+    .rm-links { display: none; }
+  }
+  @media (max-width: 560px) {
+    .tl-track { grid-template-columns: 1fr; }
+    .hs { padding: 0 1rem; }
+  }
+  @media print {
+    .rm-nav, .controls { position: static; }
+    .rc { break-inside: avoid; }
+  }
+</style>
+<link rel="stylesheet" href="../data/roadmap-modal.css">
+</head>
+<body>
+
+<nav class="rm-nav">
+  <a class="rm-brand" href="#top">
+    <span class="rm-brand-title">SARVAX</span>
+    <span class="rm-pill">Product Roadmap</span>
+  </a>
+  <div class="rm-links">
+    <a class="rm-link" href="#lane-live">Delivered</a>
+    <a class="rm-link" href="#lane-in-progress">In Progress</a>
+    <a class="rm-link" href="#lane-planned">Committed</a>
+    <a class="rm-link" href="#timeline">Timeline</a>
+  </div>
+  <a class="rm-back" href="sarvax-capabilities-brief.html">← Capabilities</a>
+</nav>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div class="hero-eyebrow">C3A Labs · Confidential Client Briefing · September 2026</div>
+    <h1>What we've shipped.<br><span class="muted">What's shipping next.</span></h1>
+    <p class="hero-sub">The complete SARVAX delivery picture — 65 capabilities across the platform and your wealth-management business track, with owners, dates, and status. No surprises, no guesswork.</p>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-val">33</div><div class="hs-label">Live</div></div>
+      <div class="hs"><div class="hs-val">7</div><div class="hs-label">Shipping / Discussion</div></div>
+      <div class="hs"><div class="hs-val">8</div><div class="hs-label">Committed</div></div>
+      <div class="hs"><div class="hs-val">6</div><div class="hs-label">In Research</div></div>
+      <div class="hs"><div class="hs-val">11</div><div class="hs-label">Future Scope</div></div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="wrap controls-inner" style="padding:0;">
+      <div class="seg" id="track-seg">
+        <button class="active" data-track="all">All 65</button>
+        <button data-track="Platform">Platform</button>
+        <button data-track="Business">Business</button>
+      </div>
+      <div class="search-wrap">
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="rm-search" placeholder="Search features, owners, modules…">
+      </div>
+      <div class="legend">
+        <span><b>●</b> Live</span><span><b>◐</b> In Progress</span><span><b>○</b> Planned</span><span><b>◌</b> Research</span><span><b>·</b> Future</span>
+      </div>
+    </div>
+  </div>
+
+
+      <section class="lane" id="lane-live">
+        <div class="lane-head">
+          <span class="lane-glyph">●</span>
+          <h2 class="lane-title">Live</h2>
+          <span class="lane-count">33</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">OneChat</h3>
+          <p class="rc-note">Unified AI workspace for conversations, tasks, files, and enterprise knowledge.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Aura — AI Chief of Staff</h3>
+          <p class="rc-note">AI executive assistant for planning, execution, and intelligent task management.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Workflow Builder V2</h3>
+          <p class="rc-note">No-code workflow builder to automate business processes using AI.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Skills Directory</h3>
+          <p class="rc-note">Central repository of reusable AI skills and business automations.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Connectors &amp; Integrations</h3>
+          <p class="rc-note">Pre-built and custom integrations with enterprise applications and third-party tools.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Custom MCP Servers</h3>
+          <p class="rc-note">Support for custom Model Context Protocol (MCP) servers and enterprise data sources.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Agent Builder (Single Agent)</h3>
+          <p class="rc-note">Build, configure, and deploy individual AI agents for specific business use cases.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Projects &amp; Knowledge Context</h3>
+          <p class="rc-note">Organize projects with contextual knowledge, files, and AI memory.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Meetings &amp; Calendar Intelligence</h3>
+          <p class="rc-note">AI-powered meeting recording, transcription, summaries, and calendar intelligence.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Scheduler &amp; Automation</h3>
+          <p class="rc-note">Automate recurring tasks, reminders, approvals, and scheduled workflows.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Memory &amp; Personalisation</h3>
+          <p class="rc-note">Persistent memory that personalizes AI responses using user and organizational context.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Documents, Files &amp; Artifacts</h3>
+          <p class="rc-note">Centralized management and AI processing of documents, files, and generated artifacts.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Browser Extension / Meeting Assistant</h3>
+          <p class="rc-note">Browser extension for capturing meetings, web context, and AI assistance.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Human-in-the-Loop Controls</h3>
+          <p class="rc-note">Human approval checkpoints for sensitive AI actions and enterprise governance.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Model Choice &amp; AI Engine</h3>
+          <p class="rc-note">Support for multiple LLM providers with intelligent model selection and routing.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Billing, Credits &amp; Analytics</h3>
+          <p class="rc-note">Manage subscriptions, AI credits, usage analytics, and billing insights.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Delivery Channels &amp; Surface</h3>
+          <p class="rc-note">Access the platform across web, desktop, mobile, APIs, and communication channels.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Platform Reliability &amp; Trust</h3>
+          <p class="rc-note">Enterprise-grade security, reliability, monitoring, compliance, and platform governance.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Human-in-the-Loop Approval Gate</h3>
+          <p class="rc-note">Human approval required before AI executes sensitive or high-impact business actions.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Automatic Model Selection</h3>
+          <p class="rc-note">Automatically choose the most suitable AI model for every business task.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">RIA</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Company Knowledge Center</h3>
+          <p class="rc-note">Centralized repository for organizational knowledge, documents, policies, and business information.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Shubham</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Audit &amp; Observability</h3>
+          <p class="rc-note">Monitor platform health, performance metrics, logs, and operational activities centrally.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Shubham</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Platform Health Dashboard</h3>
+          <p class="rc-note"></p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Manjil</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Agent Registry</h3>
+          <p class="rc-note">Central catalog to discover, organize, and manage enterprise AI agents.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Tenant Isolation</h3>
+          <p class="rc-note">Securely isolate customer data, configurations, and workloads across multiple tenants.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Ayanabha,Manjil</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Self-Learning Agents</h3>
+          <p class="rc-note">Enable AI systems to continuously improve through learning from interactions and feedback.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">RIA</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">MCP Knowledge Server</h3>
+          <p class="rc-note">Access enterprise knowledge securely through standardized MCP-based integrations and services.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Deviprasad,Naman</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Live" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Autonomous Self-Improving Agents</h3>
+          <p class="rc-note">Build autonomous AI agents capable of learning and improving independently over time.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">RIA</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Live" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">WhatsApp Automation</h3>
+          <p class="rc-note">Automate customer communication, notifications, workflows, and document collection through WhatsApp.</p>
+          <div class="rc-meta">
+            <span class="rc-owner">Siddhi, Deviprasad,Ayanabha</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Live" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Salesforce FSC Integration</h3>
+          <p class="rc-note">Integrate financial CRM systems to streamline client relationship management processes.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Live" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">White Label Platform</h3>
+          <p class="rc-note">Allow customers to fully customize branding, interface, and user experience.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/26/2026</span><span class="rc-owner">Ayan , shubham</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Live" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Enterprise AI Provider Access</h3>
+          <p class="rc-note">Provide secure access to multiple enterprise-grade large language models.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">RIA</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Live" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">●</span>
+            <span class="rc-status">DELIVERED</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Financial Planning Agent</h3>
+          <p class="rc-note"></p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/21/2026</span><span class="rc-owner">Siddhi,Zainab</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article></div>
+      </section>
+      <section class="lane" id="lane-in-progress">
+        <div class="lane-head">
+          <span class="lane-glyph">◐</span>
+          <h2 class="lane-title">In Progress</h2>
+          <span class="lane-count">6</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Morningstar Integration</h3>
+          <p class="rc-note">Integrate leading wealth data providers for real-time financial information and insights.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/31/2026</span><span class="rc-owner">Siddhi, Manjil</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">SOC 2 Type II Compliance</h3>
+          <p class="rc-note">Achieve enterprise-grade security compliance through industry-standard certifications and best practices.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">15th sept</span><span class="rc-owner">Ayan, Ashish</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Wealth Management Bundles</h3>
+          <p class="rc-note">Deliver pre-built AI solutions tailored for specific industries and business domains.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/28/2026</span><span class="rc-owner">Deviprasad,Siddhi,Zainab</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Mobile App</h3>
+          <p class="rc-note">Discuss with sai on Monday</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/28/2026</span><span class="rc-owner">Avanish,Harsh</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Meeting Intelligence Bot (Lightweight SARVAX)</h3>
+          <p class="rc-note">Automatic meeting capture — briefs before, actions after. Competitor-grade output at a fraction of the cost.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">9/2/2026</span><span class="rc-owner">Mohit</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="In Progress" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN PROGRESS</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Syntoniq</h3>
+          <p class="rc-note"></p>
+          <div class="rc-meta">
+            <span class="rc-owner">Siddhi</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article></div>
+      </section>
+      <section class="lane" id="lane-under-discussion">
+        <div class="lane-head">
+          <span class="lane-glyph">◐</span>
+          <h2 class="lane-title">Under Discussion</h2>
+          <span class="lane-count">1</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc plat" data-status="Under Discussion" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">◐</span>
+            <span class="rc-status">IN DISCUSSION</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Agent Dashboard</h3>
+          <p class="rc-note">Monitor AI usage, health, performance, and operational insights in real time.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/28/2026</span><span class="rc-owner">AYANABHA,Ria,Shubham(To be Assigned)</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article></div>
+      </section>
+      <section class="lane" id="lane-planned">
+        <div class="lane-head">
+          <span class="lane-glyph">○</span>
+          <h2 class="lane-title">Planned</h2>
+          <span class="lane-count">8</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Continuous Learning Loop</h3>
+          <p class="rc-note">Continuously improve AI performance using user feedback and execution outcomes.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">In review</span><span class="rc-owner">Ria,Mohit</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Prompt Library</h3>
+          <p class="rc-note">Manage, version, and standardize prompts across teams and AI applications.</p>
+          <div class="rc-meta">
+            <span class="rc-owner">Ria</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Production-Grade Platform Backbone</h3>
+          <p class="rc-note">Kafka- Implementing Kafka event bus between these two servers for production reliability</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/21/2026</span><span class="rc-owner">Manjil</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Agent &amp; Workflow Versioning Management</h3>
+          <p class="rc-note">Track, version, and deploy AI agent updates with controlled release management.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/21/2026</span><span class="rc-owner">Ayanabha, Shubham</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Provider Policy Management</h3>
+          <p class="rc-note">Govern AI models through policies, access controls, compliance, and responsible usage.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">In review</span><span class="rc-owner">Ria(To be assigned)</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Evidence Timeline</h3>
+          <p class="rc-note">Maintain comprehensive records of AI activities, decisions, and user interactions.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Manjil, Harsh, Deviprasad</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Durable Run History</h3>
+          <p class="rc-note">Store complete workflow execution history for auditing, tracking, and future analysis.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">Shubham ,Ayanabha</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Planned" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">○</span>
+            <span class="rc-status">COMMITTED</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Knowledge Verification Workflow</h3>
+          <p class="rc-note">Ensure knowledge is reviewed and approved before becoming organization-wide reference.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article></div>
+      </section>
+      <section class="lane" id="lane-research">
+        <div class="lane-head">
+          <span class="lane-glyph">◌</span>
+          <h2 class="lane-title">Research</h2>
+          <span class="lane-count">6</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc plat" data-status="Research" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Cost Controls</h3>
+          <p class="rc-note">Optimize AI usage to reduce operational costs while maintaining performance.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">In review</span><span class="rc-owner">Naman</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Research" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Addepar Integration</h3>
+          <p class="rc-note">Connect portfolio management platforms for investment monitoring and reporting workflows.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Research" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Zero-Latency Cascade Switcher</h3>
+          <p class="rc-note">Route requests intelligently to deliver faster AI responses with optimal performance.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Research" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Custom Domain AI Models</h3>
+          <p class="rc-note">Build and fine-tune domain-specific small language models for specialized tasks.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Research" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">WealthSpectrum Integration</h3>
+          <p class="rc-note">Connect portfolio management systems to access client investment and holdings data.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">No communication yet</span><span class="rc-owner">Siddhi</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Research" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">◌</span>
+            <span class="rc-status">IN RESEARCH</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Wealth Management SLM</h3>
+          <p class="rc-note">Develop AI models optimized specifically for wealth and financial services.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article></div>
+      </section>
+      <section class="lane" id="lane-future-scope">
+        <div class="lane-head">
+          <span class="lane-glyph">·</span>
+          <h2 class="lane-title">Future Scope</h2>
+          <span class="lane-count">11</span>
+        </div>
+        <div class="lane-grid">
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Visual DAG Workflow Builder</h3>
+          <p class="rc-note">Visually design AI workflows without coding using drag-and-drop components.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Review- Tuesday 18th aug</span><span class="rc-owner">Mohit</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Interactive Chat Components</h3>
+          <p class="rc-note">Deliver interactive AI responses with buttons, forms, cards, and dynamic content.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Personal Knowledge Brain (User)</h3>
+          <p class="rc-note">Maintain personalized knowledge and preferences unique to each individual user.</p>
+          <div class="rc-meta">
+            <span class="rc-owner">AYANABHA,Ria,Shubham(To be Assigned)</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Regional AI Model Coverage</h3>
+          <p class="rc-note">Support region-specific AI models to meet localization and regulatory requirements.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">Delivered</span><span class="rc-owner">RIA</span>
+            <span class="rc-ver">V2.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Compliance &amp; Audit Center</h3>
+          <p class="rc-note">Monitor compliance status, risks, policies, and audit activities from one dashboard.</p>
+          <div class="rc-meta">
+            <span class="rc-eta">9/15/2026</span><span class="rc-owner">Manjil,Avanish</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Knowledge Drift Detection</h3>
+          <p class="rc-note">Continuously monitor knowledge relevance and identify outdated organizational information.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc plat" data-status="Future Scope" data-track="Platform">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">PLATFORM</span>
+          </div>
+          <h3 class="rc-name">Self-Learning Skills</h3>
+          <p class="rc-note">Enhance AI skills continuously through learning, optimization, and usage analytics.</p>
+          <div class="rc-meta">
+            <span class="rc-owner">RIA</span>
+            <span class="rc-ver">V1.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Future Scope" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Enterprise Company Brain</h3>
+          <p class="rc-note">Centralize organizational knowledge accessible securely across teams and AI agents.</p>
+          <div class="rc-meta">
+            <span class="rc-owner">AYANABHA,Ria,Shubham(To be Assigned)</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Future Scope" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Hybrid Cloud Deployment</h3>
+          <p class="rc-note">Deploy the platform as a scalable, secure, enterprise-ready SaaS solution.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Future Scope" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Bring Your Own AI Keys (BYOK)</h3>
+          <p class="rc-note">Enable customers to securely manage and control their own API credentials (Only valid for SarvaX hosted solution, For privately deployed enviornment they already have their own keys).</p>
+          <div class="rc-meta">
+            <span class="rc-eta">8/31/2026</span><span class="rc-owner">AYANABHA,Ria,Shubham(To be Assigned)</span>
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article>
+        <article class="rc biz" data-status="Future Scope" data-track="Business">
+          <div class="rc-top">
+            <span class="rc-glyph">·</span>
+            <span class="rc-status">FUTURE</span>
+            <span class="rc-track">BUSINESS</span>
+          </div>
+          <h3 class="rc-name">Bring Your Own AI Models (BYOM)</h3>
+          <p class="rc-note">Allow customers to deploy and use their preferred proprietary AI models.</p>
+          <div class="rc-meta">
+
+            <span class="rc-ver">V3.0</span>
+          </div>
+        </article></div>
+      </section>
+
+  <section class="timeline" id="timeline">
+    <h2 class="tl-title">Delivery Timeline</h2>
+    <div class="tl-track">
+      <div class="tl-col done">
+        <div class="tl-phase">Phase 1 · Done</div>
+        <div class="tl-when">Aug 2026</div>
+        <div class="tl-items">
+          <b>Automatic Model Selection</b> — the right AI for every task<br>
+          <b>Company Knowledge Center</b><br>
+          <b>WhatsApp Automation</b> live<br>
+          <b>White-Label Platform</b> live<br>
+          <b>Financial Planning Agent</b> live<br>
+          <b>Salesforce CRM integration</b> live
+        </div>
+      </div>
+      <div class="tl-col done">
+        <div class="tl-phase">Phase 2 · Shipping</div>
+        <div class="tl-when">September 2026</div>
+        <div class="tl-items">
+          <b>Morningstar data integration</b> — Aug 31<br>
+          <b>Meeting Intelligence Bot</b> — Sep 2<br>
+          <b>SOC 2 Type II compliance</b> — Sep 15<br>
+          <b>Compliance &amp; Audit Center</b> — Sep 15<br>
+          <b>Wealth Management solution bundles</b>
+        </div>
+      </div>
+      <div class="tl-col">
+        <div class="tl-phase">Phase 3 · Committed</div>
+        <div class="tl-when">Q4 2026</div>
+        <div class="tl-items">
+          <b>Platform backbone upgrade</b> for production reliability<br>
+          <b>Agent &amp; workflow versioning</b> — controlled releases<br>
+          <b>Prompt Library</b> — team-wide standardization<br>
+          <b>AI governance policies</b> &amp; cost controls<br>
+          <b>Verified knowledge approval</b> workflow
+        </div>
+      </div>
+      <div class="tl-col">
+        <div class="tl-phase">Phase 4 · Next</div>
+        <div class="tl-when">2027</div>
+        <div class="tl-items">
+          <b>Visual drag-and-drop workflow builder</b><br>
+          <b>Personal knowledge brain</b> per advisor<br>
+          <b>Portfolio platform integrations</b> (Addepar)<br>
+          <b>Hybrid cloud deployment</b> &amp; BYOK/BYOM<br>
+          <b>Wealth-specific AI models</b> in research
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div><span class="ast">✱</span>&nbsp; SARVAX Product Roadmap · C3A Labs R&amp;D</div>
+    <div>Source of truth: Usecase Tracker (Platform RoadMap · Business Roadmap) · Verified September 2026</div>
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var search = document.getElementById('rm-search');
+  var seg = document.getElementById('track-seg');
+  var currentTrack = 'all';
+
+  function apply() {
+    var q = (search.value || '').toLowerCase().trim();
+    document.querySelectorAll('.rc').forEach(function(card) {
+      var trackOk = currentTrack === 'all' || card.getAttribute('data-track') === currentTrack;
+      var textOk = !q || card.innerText.toLowerCase().indexOf(q) !== -1;
+      card.hidden = !(trackOk && textOk);
+    });
+    document.querySelectorAll('.lane').forEach(function(lane) {
+      var visible = lane.querySelectorAll('.rc:not([hidden])').length;
+      lane.hidden = visible === 0;
+    });
+  }
+
+  search.addEventListener('input', apply);
+  seg.addEventListener('click', function(e) {
+    var btn = e.target.closest('button[data-track]');
+    if (!btn) return;
+    currentTrack = btn.getAttribute('data-track');
+    seg.querySelectorAll('button').forEach(function(b) { b.classList.toggle('active', b === btn); });
+    apply();
+  });
+})();
+</script>
+<script src="../data/roadmap-modal-data.js"></script>
+<script src="../data/roadmap-modal.js"></script>
+</body>
+</html>

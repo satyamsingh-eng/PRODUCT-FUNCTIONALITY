@@ -1,0 +1,1535 @@
+[
+  {
+    "heading": "Single-Agent Execution",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Personal Director Agent \u2014 COS Planner & DAG Fan-Out",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Self-Learning Memory (Agent Memory Validation)",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Governed Agent Directory",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Self-Learning Agent \u2014 Governed Behavior Promotion",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Workflow V2 DAG Runtime",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Per-Step Tool/Skill/MCP Attachment",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Scheduling & Event Triggers",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Live Workflow Tool-Config Edits",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Governed Prompt Library",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Skills Marketplace",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Composio + MCP Connected Apps",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Live Data Fetch (Never Mirrored)",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "MCP Endpoint Validation & Credential Redaction",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Self-Learning Skills",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Personal Memory \u2014 Mem0 + Pinecone",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Meeting, Document & Project RAG",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Automatic History Compression",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Company Brain \u2014 Organizational Knowledge Graph",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Multi-Provider Model Support",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Bring-Your-Own-Key (User + Org Level)",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Automatic Model Selection",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Reasoning-Effort Standardization",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Granular Per-Token-Type Billing",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "SARVAX-Owned Model Router",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Invitation-Only Access",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Per-User, Per-Agent Permissions",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Encrypted Credentials & Hashed MCP Keys",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Per-User Data Isolation (Composio)",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "SOC 2 Compliance",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Run & Span Observatory",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Per-Run Token Telemetry",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Artifacts API",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Command Center",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Evals & Quality Gate",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Multi-Tenant Organization Model",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Bundle Packaging (Skills, Agents, Workflows)",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Container-Ready Deployment",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Hybrid SaaS & White-Label Deployment",
+    "badge": "Agents & Orchestration \u00b7 LIVE IN PROD",
+    "detail_pairs": [
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "Why It Matters",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "How It Works",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "Where This Lives in the Platform",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ],
+      [
+        "What It Is",
+        "Runs a single agent for a focused job \u2014 described once through the builder, ready to run. Set up once through the builder \u2014 role, tools, and knowledge scope \u2014 then reusable for every future run."
+      ],
+      [
+        "How It Works For Your Team",
+        "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder. Backed by Django-persisted agent records, so configuration survives beyond a single session."
+      ],
+      [
+        "What This Means For Your Firm",
+        "A focused job doesn't need a custom orchestration script written for it \u2014 the builder handles setup once. Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+      ],
+      [
+        "Proof It's Running",
+        "Live in production Runs on OneChat's existing agent runtime today, not a planned feature."
+      ]
+    ],
+    "pair_count": 312
+  },
+  {
+    "heading": "Core Infrastructure & Repositories",
+    "badge": "CORE ARCHITECTURE",
+    "detail_pairs": [],
+    "pair_count": 0
+  },
+  {
+    "heading": "Deep Architecture Schematics",
+    "badge": "",
+    "detail_pairs": [],
+    "pair_count": 0
+  }
+]

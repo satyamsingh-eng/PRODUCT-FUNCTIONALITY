@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "tab-m01-1",
+    "category": "Agents & Orchestration",
+    "status": "Agents & Orchestration · LIVE IN PROD",
+    "number": "01",
+    "title": "Single-Agent Execution",
+    "summary": "Runs a single agent for a focused job — described once through the builder, ready to run. Set up once through the builder — role, tools, and knowledge scope — then reusable for every future run.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Runs a single agent for a focused job — described once through the builder, ready to run.",
+          "Set up once through the builder — role, tools, and knowledge scope — then reusable for every future run."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A focused job doesn't need a custom orchestration script written for it — the builder handles setup once.",
+          "Every agent is owned and organization-scoped the moment it's created, so nothing runs unaccountably."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "OneChat's runtime supports single-agent execution and multi-agent team orchestration from the same builder.",
+          "Backed by Django-persisted agent records, so configuration survives beyond a single session."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Runs on OneChat's existing agent runtime today, not a planned feature."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m01-2",
+    "category": "Agents & Orchestration",
+    "status": "Agents & Orchestration · LIVE IN PROD",
+    "number": "02",
+    "title": "Personal Director Agent — COS Planner & DAG Fan-Out",
+    "summary": "Breaks a complex request into steps and runs the independent ones at the same time, coordinated as a team. Coordinated as a team under a Chief-of-Staff planner, not as separate disconnected agent calls.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Breaks a complex request into steps and runs the independent ones at the same time, coordinated as a team.",
+          "Coordinated as a team under a Chief-of-Staff planner, not as separate disconnected agent calls."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A single advisor request — research, draft, follow-up — doesn't have to run as three separate manual steps.",
+          "Parallel sub-agent execution means the team finishes in the time of its slowest branch, not the sum of every branch."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "A Chief-of-Staff (COS) planner decomposes a task into a dependency graph (DAG) and spawns parallel sub-agent runs against it.",
+          "The COS planner produces a dependency graph, then dispatches sub-agent runs against it directly."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "The COS planner and DAG fan-out are active, running code, not a design doc."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m01-3",
+    "category": "Agents & Orchestration",
+    "status": "Agents & Orchestration · LIVE IN PROD",
+    "number": "03",
+    "title": "Self-Learning Memory (Agent Memory Validation)",
+    "summary": "Every agent draws on relevant memory instead of starting from zero each time — and what it \"learns\" is checked before it's trusted for later use. Applies to every agent by default, not an opt-in feature someone has to configure.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Every agent draws on relevant memory instead of starting from zero each time — and what it \"learns\" is checked before it's trusted for later use.",
+          "Applies to every agent by default, not an opt-in feature someone has to configure."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Memory quality doesn't degrade over time, because what gets remembered is checked before it's trusted for reuse.",
+          "An agent that's worked with a client before doesn't start from zero on the next conversation."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Agents use persistent memory and runtime-loaded skills, with observer-style updates written back after each run. Updates require an explicit evidence source, a valid category, and a completed interaction — malformed observer output is rejected.",
+          "Observer-style updates are written back only after a completed interaction, never mid-run."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Observer-style memory validation already rejects malformed updates in production."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-directory",
+    "category": "Agents & Orchestration",
+    "status": "Agents & Orchestration · IN DEVELOPMENT",
+    "number": "04",
+    "title": "Governed Agent Directory",
+    "summary": "Agents can be created and run today through the builder, single or multi-agent. What's ahead is one unified catalog across every agent type, with lifecycle states, versioning, ownership, and a reliability score — searchable by role and use case. Would sit across every agent shape — single agents and multi-agent teams — not just one.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Agents can be created and run today through the builder, single or multi-agent. What's ahead is one unified catalog across every agent type, with lifecycle states, versioning, ownership, and a reliability score — searchable by role and use case.",
+          "Would sit across every agent shape — single agents and multi-agent teams — not just one."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Today, finding \"every agent we've deployed and who owns it\" means checking four different places by hand.",
+          "A real catalog with lifecycle states and a reliability score is what makes agent sprawl manageable at scale."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need one schema across the currently-separate single-agent and team-agent storage shapes."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Agents run today across four separate storage shapes with no shared catalog yet.",
+          "A unified schema with lifecycle states is the next step, not started."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-agent",
+    "category": "Agents & Orchestration",
+    "status": "Agents & Orchestration · IN DEVELOPMENT",
+    "number": "05",
+    "title": "Self-Learning Agent — Governed Behavior Promotion",
+    "summary": "Agent memory already accumulates via Mem0 and is validated before reuse today (see Agents & Orchestration — this is the live \"self-learning\" foundation). What's ahead is extending that same governance from memory content to agent behavior itself — prompt, tool policy, and model route — through a reviewable candidate, canary rollout, and drift-monitored promotion, rather than editing an agent's config in place. Extends the same governance already applied to memory content into the agent's actual configuration.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Agent memory already accumulates via Mem0 and is validated before reuse today (see Agents & Orchestration — this is the live \"self-learning\" foundation). What's ahead is extending that same governance from memory content to agent behavior itself — prompt, tool policy, and model route — through a reviewable candidate, canary rollout, and drift-monitored promotion, rather than editing an agent's config in place.",
+          "Extends the same governance already applied to memory content into the agent's actual configuration."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Memory content is already governed — this closes the same gap for the agent's actual behavior (prompt, tools, routing).",
+          "A candidate/canary/rollback pipeline means a behavior change can be reversed the moment it underperforms, not after it's already shipped broadly."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need a candidate object with diff, risk, and rollback pointer — none of which exists yet for behavior."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Memory governance is live; behavior governance (prompt, tools, route) is not yet built.",
+          "No candidate/canary/rollback mechanism exists for agent config today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m02-1",
+    "category": "Workflow Automation",
+    "status": "Workflow Automation · LIVE IN PROD",
+    "number": "06",
+    "title": "Workflow V2 DAG Runtime",
+    "summary": "Runs multi-step processes as one coordinated workflow, with independent steps executing at the same time so complex workflows finish faster. One plan replaces what would otherwise be a manual sequence of chat requests.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Runs multi-step processes as one coordinated workflow, with independent steps executing at the same time so complex workflows finish faster.",
+          "One plan replaces what would otherwise be a manual sequence of chat requests."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A multi-step business process runs as one coordinated workflow instead of a chain of manual chat requests.",
+          "Parallel execution means a five-step workflow finishes in the time of its slowest step, not the sum of all five."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Workflow V2 executes as a directed-acyclic-graph (DAG) runtime with per-step dependencies; OneChat's DAG executor runs parallel steps with per-node retries and timeouts.",
+          "OneChat's DAG executor manages per-node retries and timeouts independently of the overall plan."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Confirmed via direct code review: real concurrent execution, not simulated parallelism."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m02-2",
+    "category": "Workflow Automation",
+    "status": "Workflow Automation · LIVE IN PROD",
+    "number": "07",
+    "title": "Per-Step Tool/Skill/MCP Attachment",
+    "summary": "Gives each step its own tools, skills, and connected apps, rather than one shared toolset for the whole workflow. Tool and skill access is decided per step, not once for the whole workflow.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Gives each step its own tools, skills, and connected apps, rather than one shared toolset for the whole workflow.",
+          "Tool and skill access is decided per step, not once for the whole workflow."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Each step reaches exactly the tools it needs — a research step and a filing step don't share a bloated, over-permissioned toolset.",
+          "Scoped per-step access is also a smaller blast radius if any one step misbehaves."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Workflow nodes attach per-step skills, tools, and MCP (Model Context Protocol) servers, with envelope-controlled tool-call execution.",
+          "Tool-call execution on workflow nodes is envelope-controlled, checked before it runs."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Per-step tool and skill attachment is active in the current workflow executor."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m02-3",
+    "category": "Workflow Automation",
+    "status": "Workflow Automation · LIVE IN PROD",
+    "number": "08",
+    "title": "Scheduling & Event Triggers",
+    "summary": "Runs on a schedule or in response to an event, like a meeting ending — not only on manual request. Covers both calendar-style schedules and real business events, like a meeting ending.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Runs on a schedule or in response to an event, like a meeting ending — not only on manual request.",
+          "Covers both calendar-style schedules and real business events, like a meeting ending."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A workflow that only runs on manual request misses the moment that actually matters — like a meeting just ending.",
+          "Scheduled and event-triggered runs turn a workflow from a tool you remember to use into infrastructure that just runs."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Django stores schedules and meeting triggers alongside workflow specs, run history, and templates.",
+          "Django stores the schedule or trigger alongside the workflow spec itself, not in a separate system."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Schedules and meeting triggers are stored and firing in the current system."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m02-4",
+    "category": "Workflow Automation",
+    "status": "Workflow Automation · LIVE IN PROD",
+    "number": "09",
+    "title": "Live Workflow Tool-Config Edits",
+    "summary": "Applies tool-configuration changes without a round-trip to the execution runtime. Applies at the workflow-tool level, not a platform-wide redeploy.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Applies tool-configuration changes without a round-trip to the execution runtime.",
+          "Applies at the workflow-tool level, not a platform-wide redeploy."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A tool-config change that requires a full redeploy is a change nobody makes casually — even when it should be quick.",
+          "Applying edits directly, without a round-trip to the runtime, keeps workflow tuning fast enough to actually happen."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Local workflow tool-config edits now apply directly, with span-tracked scheduling covering token usage across the full run.",
+          "Span-tracked scheduling now covers token usage across the full run, not just at the edges."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Direct tool-config edits shipped as a real feature, not a planned improvement."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-prompt",
+    "category": "Workflow Automation",
+    "status": "Workflow Automation · IN DEVELOPMENT",
+    "number": "10",
+    "title": "Governed Prompt Library",
+    "summary": "Prompts are already stored per user and per organization today. What's ahead is a versioned, owned library with rollout notes and before/after test evidence, selectable across workflows and agents. Distinct from ad hoc saved prompts — this is a governed, owned, versioned catalog.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Prompts are already stored per user and per organization today. What's ahead is a versioned, owned library with rollout notes and before/after test evidence, selectable across workflows and agents.",
+          "Distinct from ad hoc saved prompts — this is a governed, owned, versioned catalog."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Prompts already exist per user and per org today — what's missing is knowing which one is the approved, current version.",
+          "A versioned library with owners and rollout notes is what turns \"someone's saved prompt\" into a governed operating asset."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need owners, versions, and rollout notes attached to what's currently plain text storage."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Prompts are stored today with no version, owner, or approval fields.",
+          "A governed library with rollout notes doesn't exist yet."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m03-1",
+    "category": "Skills & Integrations",
+    "status": "Skills & Integrations · LIVE IN PROD",
+    "number": "11",
+    "title": "Skills Marketplace",
+    "summary": "Lets a library of reusable \"skills\" be browsed, versioned, and attached to agents or workflow steps. Skills carry categories, versions, and fork lineage, not just a flat file list.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Lets a library of reusable \"skills\" be browsed, versioned, and attached to agents or workflow steps.",
+          "Skills carry categories, versions, and fork lineage, not just a flat file list."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A proven playbook shouldn't have to be rebuilt from scratch for every new agent or workflow that needs it.",
+          "Versioning and forking mean a skill can improve over time without breaking whoever already depends on the current version."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Django's marketplace tracks categories, featured/public flags, likes, forks, copies, and versions; OneChat loads skill files (ZIP or markdown) at runtime.",
+          "OneChat loads the skill file (ZIP or markdown) at the moment it's needed, not preloaded in bulk."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "The marketplace's versioning, forks, and categories are active today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m03-2",
+    "category": "Skills & Integrations",
+    "status": "Skills & Integrations · LIVE IN PROD",
+    "number": "12",
+    "title": "Composio + MCP Connected Apps",
+    "summary": "Lets agents and workflows reach real business tools instead of working from stale exports, without re-hitting the network for repeated lookups. Composio plus a custom MCP runtime together, not one or the other.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Lets agents and workflows reach real business tools instead of working from stale exports, without re-hitting the network for repeated lookups.",
+          "Composio plus a custom MCP runtime together, not one or the other."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Real business tools — not a hardcoded list of hypothetical ones — are what makes an agent actually useful day to day.",
+          "A cached tool list means the tenth agent invocation isn't paying the same network cost as the first."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "An active Composio client plus a custom MCP (Model Context Protocol) runtime connect to third-party toolkits and adapters; MCP tool lists are cached in memory, cutting redundant API calls and latency on repeat agent invocations.",
+          "MCP tool lists are cached in memory, avoiding a repeat network round-trip on every invocation."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Composio and the custom MCP runtime are both active integration paths."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m03-3",
+    "category": "Skills & Integrations",
+    "status": "Skills & Integrations · LIVE IN PROD",
+    "number": "13",
+    "title": "Live Data Fetch (Never Mirrored)",
+    "summary": "Fetches live data at the moment it's needed, so it can never go stale. Nothing about the connected data is copied or cached into a document.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Fetches live data at the moment it's needed, so it can never go stale.",
+          "Nothing about the connected data is copied or cached into a document."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A number that's a query away is more trustworthy than a number that was true when someone last exported it.",
+          "Nothing about \"live data\" is a promise if it's actually a nightly sync — this is query-time, every time."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Composio queries hit the live system of record — e.g. a CRM deal stage — at query time; nothing is copied or mirrored into a document.",
+          "The query hits Composio's live connection to the system of record at the exact moment it's asked."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Confirmed: queries hit the live system of record, nothing is mirrored."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m03-4",
+    "category": "Skills & Integrations",
+    "status": "Skills & Integrations · LIVE IN PROD",
+    "number": "14",
+    "title": "MCP Endpoint Validation & Credential Redaction",
+    "summary": "Checks every external tool connection before it's allowed to run, and never leaks a credential even when a connection fails. Applies to every MCP connection attempt, not spot-checked ones.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Checks every external tool connection before it's allowed to run, and never leaks a credential even when a connection fails.",
+          "Applies to every MCP connection attempt, not spot-checked ones."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "An unsafe or private target getting silently called by an agent is exactly the kind of failure that's invisible until it isn't.",
+          "A credential leaking into an error message is a real, common failure mode this specifically closes off."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "MCP endpoints are validated to block unsafe local or private targets, and connection failures redact identity tokens so a broken connection never leaks a credential.",
+          "Identity tokens are stripped from the response before a connection failure ever surfaces an error."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Endpoint validation and credential redaction are active in the current MCP layer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-skills",
+    "category": "Skills & Integrations",
+    "status": "Skills & Integrations · IN DEVELOPMENT",
+    "number": "15",
+    "title": "Self-Learning Skills",
+    "summary": "Skills can be manually versioned and published today. What's ahead is an automated loop that observes where a skill succeeds or fails in production, proposes an improved candidate version with evidence, evaluates it, and only promotes it on a measured quality win — with rollback. Would apply the same observe-propose-evaluate-promote pattern already proven for memory.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Skills can be manually versioned and published today. What's ahead is an automated loop that observes where a skill succeeds or fails in production, proposes an improved candidate version with evidence, evaluates it, and only promotes it on a measured quality win — with rollback.",
+          "Would apply the same observe-propose-evaluate-promote pattern already proven for memory."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Manual publishing works, but it means skill quality only improves when someone remembers to go fix it.",
+          "An automated loop that proposes, evaluates, and only promotes on a measured win is what makes improvement continuous instead of occasional."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need automated evaluation against production failure replays before any promotion."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Manual versioning and publishing exist; automated evaluation does not.",
+          "No candidate-skill object or regression gate exists in the codebase today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m04-1",
+    "category": "Memory & Context",
+    "status": "Memory & Context · LIVE IN PROD",
+    "number": "16",
+    "title": "Personal Memory — Mem0 + Pinecone",
+    "summary": "Remembers relevant facts, preferences, and prior work across conversations, not just within a single chat. Runs on Mem0 and Pinecone specifically — vector-based, not a simple key-value store.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Remembers relevant facts, preferences, and prior work across conversations, not just within a single chat.",
+          "Runs on Mem0 and Pinecone specifically — vector-based, not a simple key-value store."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "An advisor shouldn't have to re-explain context that was already established three conversations ago.",
+          "Memory that's global to the person, not scoped to one chat session, is what makes long-term advisory relationships feel continuous."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Personal memory runs live on Mem0 and Pinecone (vector retrieval).",
+          "Vector retrieval against Pinecone is what makes \"relevant\" memory possible, not a keyword match."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Mem0 and Pinecone are the live personal memory backend today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m04-2",
+    "category": "Memory & Context",
+    "status": "Memory & Context · LIVE IN PROD",
+    "number": "17",
+    "title": "Meeting, Document & Project RAG",
+    "summary": "Pulls specific context from meetings, documents, or projects instead of searching everything — with every conversation, file, and context object tied to a real session record. Filters span user, organization, meeting, document, and project — five distinct scopes.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Pulls specific context from meetings, documents, or projects instead of searching everything — with every conversation, file, and context object tied to a real session record.",
+          "Filters span user, organization, meeting, document, and project — five distinct scopes."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Pulling only the relevant slice — this client, this meeting, this document — is faster and more accurate than searching everything every time.",
+          "Every conversation, file, and context object ties back to a real session record, so nothing is orphaned or unaccountable."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Retrieval-augmented generation (RAG) is scoped by user, organization, meeting, document, and project filters. Django persists chat sessions, project files, contexts, and usage alongside the agent records that used them.",
+          "Django persists the session, file, and context objects that the retrieval scope draws from."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Scoped RAG retrieval across five filter types is active in production."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m04-3",
+    "category": "Memory & Context",
+    "status": "Memory & Context · LIVE IN PROD",
+    "number": "18",
+    "title": "Automatic History Compression",
+    "summary": "Keeps long conversations fast and affordable instead of growing more expensive over time. Triggers automatically past 10 messages, with no manual action required.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Keeps long conversations fast and affordable instead of growing more expensive over time.",
+          "Triggers automatically past 10 messages, with no manual action required."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A long-running conversation getting slower and more expensive over time is a real, common failure mode in most chat products — this specifically prevents it.",
+          "Caching summaries by content fingerprint means the same history is never re-summarized twice for no reason."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Sessions beyond 10 messages auto-compress older turns into a single LLM-generated summary, keeping recent turns verbatim; summaries are cached by session and content fingerprint.",
+          "Summaries are cached by session and content fingerprint, so nothing is recomputed twice."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Automatic compression past 10 messages is a shipped, running feature."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-knowledge",
+    "category": "Memory & Context",
+    "status": "Memory & Context · IN DEVELOPMENT",
+    "number": "19",
+    "title": "Company Brain — Organizational Knowledge Graph",
+    "summary": "Personal memory and meeting/document/project retrieval are live today. What's ahead is a structured, permissioned knowledge graph across an organization's people, projects, and decisions, with source lineage and a compiled-wiki layer on top of today's retrieval. Would add relationship modeling on top of retrieval, not replace it.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Personal memory and meeting/document/project retrieval are live today. What's ahead is a structured, permissioned knowledge graph across an organization's people, projects, and decisions, with source lineage and a compiled-wiki layer on top of today's retrieval.",
+          "Would add relationship modeling on top of retrieval, not replace it."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Personal memory and RAG solve individual context — this is the next layer up: what does the *organization* collectively know.",
+          "Source lineage and permissioning matter more here than in personal memory, because the audience is every authorized person in the firm, not just one advisor."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need a graph data model — nodes and relationships — layered on top of today's vector index."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "No graph database or entity-relationship model exists in either backend.",
+          "Personal memory and RAG are the live foundation this would extend."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m05-1",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · LIVE IN PROD",
+    "number": "20",
+    "title": "Multi-Provider Model Support",
+    "summary": "Isn't locked into one AI provider. Allowlists are configured by the admin, not hardcoded by the platform.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Isn't locked into one AI provider.",
+          "Allowlists are configured by the admin, not hardcoded by the platform."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Being locked into one AI provider is a real business risk — pricing changes, outages, and model deprecations all become the buyer's problem.",
+          "Configurable allowlists mean an org's model choices reflect its own policy, not a hardcoded default."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "OneChat supports multiple providers with configurable model allowlists.",
+          "The allowlist is enforced at the point a model is selected, not after the fact."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Multi-provider support with configurable allowlists is active today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m05-2",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · LIVE IN PROD",
+    "number": "21",
+    "title": "Bring-Your-Own-Key (User + Org Level)",
+    "summary": "Lets individual users and whole organizations each bring their own provider API key. Available independently at the individual user level or the whole-organization level.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Lets individual users and whole organizations each bring their own provider API key.",
+          "Available independently at the individual user level or the whole-organization level."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A customer that wants to control its own AI spend and vendor relationship shouldn't have to route every request through the platform's own keys.",
+          "Isolated billing and quota at both the user and org level means BYOK doesn't create a shared-cost blind spot."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "BYOK (bring-your-own-key) is supported at both the user level and the organization level (e.g. OpenRouter), each with independent billing, rate limits, and quota tracking.",
+          "Rate limits and quota tracking are independent per key, whether user-level or org-level."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "BYOK at both user and org level is a shipped, working feature."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m05-3",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · LIVE IN PROD",
+    "number": "22",
+    "title": "Automatic Model Selection",
+    "summary": "Requests don't have to name a specific model — the platform can pick one automatically for the task. Runs through OpenRouter's Auto Router today, with constraints layered on top.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Requests don't have to name a specific model — the platform can pick one automatically for the task.",
+          "Runs through OpenRouter's Auto Router today, with constraints layered on top."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Not every request needs a human to pick a model by hand — automatic selection removes a decision point most users don't want to make.",
+          "This is honestly scoped: it's real automatic selection today, with a SARVAX-owned version still ahead (see Roadmap)."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Model selection runs through OpenRouter's Auto Router, with SARVAX's effort-level and provider-allowlist constraints applied on top. This is routing via an integrated provider, not a proprietary SARVAX-built selector — see Roadmap for the SARVAX-owned, quality-scored version.",
+          "SARVAX's own effort-level and provider-allowlist constraints are applied on top of the router's pick."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Confirmed via code review: real routing through OpenRouter's Auto Router, not a stub."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m05-4",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · LIVE IN PROD",
+    "number": "23",
+    "title": "Reasoning-Effort Standardization",
+    "summary": "Applies one \"reasoning effort\" setting consistently across different model providers. Covers Claude, OpenAI, and Gemini's differently-named reasoning controls under one setting.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Applies one \"reasoning effort\" setting consistently across different model providers.",
+          "Covers Claude, OpenAI, and Gemini's differently-named reasoning controls under one setting."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Every model provider has its own reasoning-control knob with its own name and scale — this removes that inconsistency for the person configuring it.",
+          "One mental model (low/medium/high/expert) works the same regardless of which provider is actually serving the request."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "A single effort level (low/medium/high/expert) maps automatically to each model's native reasoning control — Claude's budget_tokens, OpenAI's reasoning_effort, Gemini's thinkingLevel — without route-specific configuration.",
+          "The mapping happens without any route-specific configuration needed from whoever set the effort level."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "The effort-to-provider-control mapping is active across all supported providers."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m05-5",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · LIVE IN PROD",
+    "number": "24",
+    "title": "Granular Per-Token-Type Billing",
+    "summary": "Shows exactly what's being spent, broken down by the type of token, on billing infrastructure built for reliability rather than a happy-path counter. Completion, cache-read, cache-write, and reasoning tokens are each tracked as their own category.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Shows exactly what's being spent, broken down by the type of token, on billing infrastructure built for reliability rather than a happy-path counter.",
+          "Completion, cache-read, cache-write, and reasoning tokens are each tracked as their own category."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A single \"tokens used\" number hides where the cost actually came from — completion, cache, or reasoning tokens all behave differently.",
+          "Per-model attribution inside agent-builder workflows means a cost spike can be traced to the specific agent that caused it."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Completion, cache-read, cache-write, and reasoning tokens are tracked and billed separately with provider-specific pricing, including per-model attribution inside agent-builder workflows. Central pricing, usage-event dedupe, a local ledger, webhooks, and dead-letter fallback back every billed event.",
+          "A central pricing engine applies provider-specific rates to each token category separately."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Per-token-category billing with provider-specific pricing is live and tracked."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-router",
+    "category": "Model Options & Cost",
+    "status": "Model Options & Cost · IN DEVELOPMENT",
+    "number": "25",
+    "title": "SARVAX-Owned Model Router",
+    "summary": "Automatic model selection is already live today via OpenRouter's Auto Router (see Model Options & Cost). What's ahead is a SARVAX-owned selection layer on top — routing by a quality scorecard, live provider-health signals, and measured automatic failover across providers, rather than delegating the decision to a single integrated router. Would replace \"delegate the decision\" with \"decide based on this platform's own evidence.\"",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Automatic model selection is already live today via OpenRouter's Auto Router (see Model Options & Cost). What's ahead is a SARVAX-owned selection layer on top — routing by a quality scorecard, live provider-health signals, and measured automatic failover across providers, rather than delegating the decision to a single integrated router.",
+          "Would replace \"delegate the decision\" with \"decide based on this platform's own evidence.\""
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "OpenRouter's router works today, but it's a third party's decision logic, not one built on this platform's own quality and cost evidence.",
+          "A SARVAX-owned router means routing decisions can factor in this platform's own observed reliability data, not just OpenRouter's general-purpose heuristics."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need live provider-health signals and a quality scorecard, neither of which exists yet."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Model selection currently delegates to OpenRouter — confirmed no in-house scorecard logic exists.",
+          "A dead-code fallback flag exists but is never actually invoked."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m06-1",
+    "category": "Security & Access",
+    "status": "Security & Access · LIVE IN PROD",
+    "number": "26",
+    "title": "Invitation-Only Access",
+    "summary": "Only lets in people your organization explicitly invites — no open signup door. The only way into the platform is an invitation an org admin sends.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Only lets in people your organization explicitly invites — no open signup door.",
+          "The only way into the platform is an invitation an org admin sends."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "An open signup door is an attack surface a wealth-management platform can't afford — this removes it entirely by default.",
+          "Every account existing because an org explicitly created it is a simple, auditable fact a security review can point to."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Public self-registration is disabled platform-wide; accounts are created exclusively through organizational invite workflows.",
+          "Public self-registration is disabled at the platform level, not just hidden from the UI."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Public self-registration is confirmed disabled platform-wide."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m06-2",
+    "category": "Security & Access",
+    "status": "Security & Access · LIVE IN PROD",
+    "number": "27",
+    "title": "Per-User, Per-Agent Permissions",
+    "summary": "Grants access to a specific agent person by person, not just organization-wide. Grants are scoped to one specific agent, not blanket organization access.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Grants access to a specific agent person by person, not just organization-wide.",
+          "Grants are scoped to one specific agent, not blanket organization access."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Organization-wide access to every agent is more exposure than most roles actually need.",
+          "Per-user, per-agent grants mean access can match the actual job someone does, not just their org membership."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "User-level agent access control grants granular per-user permissions to specific agents within an organization.",
+          "The permission check happens per agent access attempt, not once at login."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Per-user, per-agent access grants are enforced today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m06-3",
+    "category": "Security & Access",
+    "status": "Security & Access · LIVE IN PROD",
+    "number": "28",
+    "title": "Encrypted Credentials & Hashed MCP Keys",
+    "summary": "Never stores credentials or API keys in the clear, and never leaks one even when a connection fails. Covers both stored credentials and API/MCP keys under the same encryption.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Never stores credentials or API keys in the clear, and never leaks one even when a connection fails.",
+          "Covers both stored credentials and API/MCP keys under the same encryption."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Credentials in the clear are a liability the moment any part of the system is compromised — this removes that liability by design.",
+          "Redaction in error paths matters because failures are exactly when credentials are most likely to accidentally end up in a log."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Django stores service auth, encrypted credentials, and hashed MCP keys, with organization-level permissions and rate limits on top. Tool-call failures redact identity tokens so a broken connection never leaks a credential in its error output.",
+          "Encrypted credentials and hashed keys both live at the Django layer, under org-level permissions."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Credential encryption and key hashing are confirmed active at the Django layer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m06-4",
+    "category": "Security & Access",
+    "status": "Security & Access · LIVE IN PROD",
+    "number": "29",
+    "title": "Per-User Data Isolation (Composio)",
+    "summary": "Keeps one customer's connected-app data invisible to another, and requires the right user and organization context to read workflow outputs. Applies to workflow artifact storage too, not just live connected-app calls.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Keeps one customer's connected-app data invisible to another, and requires the right user and organization context to read workflow outputs.",
+          "Applies to workflow artifact storage too, not just live connected-app calls."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Two customers on the same shared platform must never be able to see each other's connected-app data — this is the boundary that guarantees it.",
+          "Per-user, per-org authentication on workflow artifacts closes the same gap for stored outputs, not just live connections."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Composio data access is isolated per user. Workflow artifact storage enforces per-user and per-organization authentication.",
+          "Composio's data isolation is enforced per user at the connection layer itself."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Per-user Composio data isolation is enforced in the current connection layer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-soc2",
+    "category": "Security & Access",
+    "status": "Security & Access · IN DEVELOPMENT",
+    "number": "30",
+    "title": "SOC 2 Compliance",
+    "summary": "SARVAX is not SOC 2 certified today. Real security foundations are already in place — encrypted credentials, hashed API/MCP keys, invitation-only access, and rate limiting — and a formal readiness audit is underway to close the remaining gaps ahead of certification. Distinct from having security features — this is about a third-party-audited certification.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "SARVAX is not SOC 2 certified today. Real security foundations are already in place — encrypted credentials, hashed API/MCP keys, invitation-only access, and rate limiting — and a formal readiness audit is underway to close the remaining gaps ahead of certification.",
+          "Distinct from having security features — this is about a third-party-audited certification."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Compliance status is a factual, verifiable claim — a wealth-management buyer's security team will ask for the actual report, not a description of it.",
+          "The real security primitives already in place (encryption, hashing, invite-only, rate limiting) are the foundation the eventual audit will build on."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need a completed third-party audit cycle — the internal readiness review is the step before that."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "The company's own internal audit states it would fail multiple Common Criteria today.",
+          "Real security primitives (encryption, hashing, rate limits) are already in place as the foundation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m07-1",
+    "category": "Operations & Reporting",
+    "status": "Operations & Reporting · LIVE IN PROD",
+    "number": "31",
+    "title": "Run & Span Observatory",
+    "summary": "Records every agent run from start to finish, not just in passing — live in production today, not a dormant dashboard. Chat, COS, workflow, and agent-builder runs all feed the same observatory, not separate silos.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Records every agent run from start to finish, not just in passing — live in production today, not a dormant dashboard.",
+          "Chat, COS, workflow, and agent-builder runs all feed the same observatory, not separate silos."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "\"We can look into it\" is a much weaker answer than \"here's the exact run, here's what it cost, here's what happened\" — this is what makes the second answer possible.",
+          "This is evidenced, not assumed: real production bug fixes have landed against this pipeline in the last month, which only happens against a system with real traffic."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "OneChat emits run summaries and spans for chat, COS, workflow, and agent-builder executions directly to Django's observatory API, with retry-backed delivery. The emitter and receiving API were hardened and shipped together, with real production bug fixes (cost-handling, multi-type token tracking) landed against it since — evidence of active traffic, not just schema.",
+          "OneChat posts run summaries and spans to Django's observatory API with retry-backed delivery."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Evidenced by real bug fixes shipped against this pipeline in the last month — proof of live traffic."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m07-2",
+    "category": "Operations & Reporting",
+    "status": "Operations & Reporting · LIVE IN PROD",
+    "number": "32",
+    "title": "Per-Run Token Telemetry",
+    "summary": "Shows exactly what a run cost, in tokens and dollars, at the level of an individual run or span — on billing infrastructure that stays reliable even when a downstream system hiccups. Granular to the level of an individual span within a run, not just the run total.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Shows exactly what a run cost, in tokens and dollars, at the level of an individual run or span — on billing infrastructure that stays reliable even when a downstream system hiccups.",
+          "Granular to the level of an individual span within a run, not just the run total."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "A single \"tokens used\" total hides which run, which agent, and which step actually drove the cost.",
+          "Per-span granularity is what turns a monthly bill into something an org can actually act on."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "The observatory dashboard tracks total tokens consumed per agent run and per span. A local ledger, webhooks, and dead-letter fallback back every billing event end to end.",
+          "The observatory dashboard aggregates tokens at both the run level and the individual span level."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Per-run and per-span token telemetry is active in the current observatory."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m07-3",
+    "category": "Operations & Reporting",
+    "status": "Operations & Reporting · LIVE IN PROD",
+    "number": "33",
+    "title": "Artifacts API",
+    "summary": "Makes agent and workflow outputs retrievable programmatically, not just visible in a UI. A dedicated API, separate from whatever UI happens to display the output.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Makes agent and workflow outputs retrievable programmatically, not just visible in a UI.",
+          "A dedicated API, separate from whatever UI happens to display the output."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Agent and workflow outputs trapped in a UI can't be piped into another system — a programmatic API is what makes integration and audit trails possible.",
+          "This is the difference between \"we can show you the output\" and \"you can pull the output into your own system.\""
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "A dedicated artifacts API exposes agent-session outputs for integration with external systems and audit trails.",
+          "The artifacts API exposes session outputs directly, without requiring a UI round-trip."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "The artifacts API is a shipped, callable endpoint today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-command",
+    "category": "Operations & Reporting",
+    "status": "Operations & Reporting · IN DEVELOPMENT",
+    "number": "34",
+    "title": "Command Center",
+    "summary": "Run, cost, and tool data is already queryable today through the observatory API, and tool approvals happen per-conversation. What's ahead is a single operator view combining agents, workflows, and integrations with direct pause, rollback, and approval controls in one place. Would combine agents, workflows, and integrations in one operator view, not three.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Run, cost, and tool data is already queryable today through the observatory API, and tool approvals happen per-conversation. What's ahead is a single operator view combining agents, workflows, and integrations with direct pause, rollback, and approval controls in one place.",
+          "Would combine agents, workflows, and integrations in one operator view, not three."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Run and cost data is queryable today — what's missing is a single place an operator actually looks to decide what needs attention.",
+          "Pause and rollback controls next to the data (not in a separate admin tool) is what turns visibility into the ability to actually act."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need real pause/rollback actions wired to the data the observatory already collects."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "The only existing approval mechanism is scoped to one workflow at a time, not platform-wide.",
+          "No pause, rollback, or kill-switch endpoint exists in either backend today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-evals",
+    "category": "Operations & Reporting",
+    "status": "Operations & Reporting · IN DEVELOPMENT",
+    "number": "35",
+    "title": "Evals & Quality Gate",
+    "summary": "Quality changes today rely on manual review. What's ahead: golden test flows built from real product paths, replay-based scoring, and a regression gate that blocks a prompt, model, skill, or agent change from shipping if quality or cost regresses. Would apply the same gate to prompt, model, skill, and agent changes alike.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Quality changes today rely on manual review. What's ahead: golden test flows built from real product paths, replay-based scoring, and a regression gate that blocks a prompt, model, skill, or agent change from shipping if quality or cost regresses.",
+          "Would apply the same gate to prompt, model, skill, and agent changes alike."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Manual review catches what a reviewer happens to notice — it doesn't catch a quality regression that's subtle or a cost regression that's gradual.",
+          "A regression gate is what makes \"we tested this before shipping\" a guarantee instead of a hope."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need golden test flows built from real product paths as the baseline to score against."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "No golden-flow fixtures, replay runner, or regression gate exist in either codebase.",
+          "Quality changes today rely entirely on manual review."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m08-1",
+    "category": "Organizations & Packaging",
+    "status": "Organizations & Packaging · LIVE IN PROD",
+    "number": "36",
+    "title": "Multi-Tenant Organization Model",
+    "summary": "Ties every user, agent, workflow, and usage record to an organization — multi-tenant by design, not bolted on. Every user, agent, workflow, and usage record carries organization context from creation.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Ties every user, agent, workflow, and usage record to an organization — multi-tenant by design, not bolted on.",
+          "Every user, agent, workflow, and usage record carries organization context from creation."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Every user, agent, workflow, and usage record belonging to an organization from day one is what makes multi-tenant behavior a property of the system, not a policy someone has to remember to enforce.",
+          "This is the backbone every other tenancy-dependent capability (bundles, billing, quotas) is actually built on."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Django models organizations, admins, users, API keys, settings, quotas, usage, and billing together, and org context threads through OneChat's runtime paths.",
+          "Org context threads through OneChat's runtime paths, not just Django's data model."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "Organization context threading through both Django and OneChat is confirmed active."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m08-2",
+    "category": "Organizations & Packaging",
+    "status": "Organizations & Packaging · LIVE IN PROD",
+    "number": "37",
+    "title": "Bundle Packaging (Skills, Agents, Workflows)",
+    "summary": "Packages skills, agents, and workflows into one named, installable unit for a client, instead of assembling them piece by piece. One bundle can span skills, agents, and workflows together, not just one type.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Packages skills, agents, and workflows into one named, installable unit for a client, instead of assembling them piece by piece.",
+          "One bundle can span skills, agents, and workflows together, not just one type."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Assembling a solution from individual skills, agents, and workflows one at a time doesn't scale past a handful of clients.",
+          "One atomic install operation means a bundle either deploys completely or not at all — no partially-configured client environments."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "A dedicated Bundle model links skills, agents, and workflows; installing a bundle copies the skills, enables the agents, and copies the workflows onto an organization in one atomic operation.",
+          "Installing a bundle copies skills, enables agents, and copies workflows in one atomic operation."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "The atomic bundle-install operation is a real, working code path today."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-m08-3",
+    "category": "Organizations & Packaging",
+    "status": "Organizations & Packaging · LIVE IN PROD",
+    "number": "38",
+    "title": "Container-Ready Deployment",
+    "summary": "Deploys flexibly using standard container tooling. A production-ready Dockerfile and entrypoint, not a development-only setup.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Deploys flexibly using standard container tooling.",
+          "A production-ready Dockerfile and entrypoint, not a development-only setup."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Standard container tooling means deployment isn't locked to one specific hosting setup or team's tribal knowledge.",
+          "This is infrastructure flexibility, not a data-residency claim — see Roadmap for what full deployment flexibility would require."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "A production-ready Docker setup (Dockerfile, entrypoint, build-context rules) supports deployment via container orchestration platforms.",
+          "Standard container orchestration platforms can deploy it without custom tooling."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "Live in production",
+          "A production-ready Dockerfile and entrypoint are shipped and in use."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-road-hybrid",
+    "category": "Organizations & Packaging",
+    "status": "Organizations & Packaging · IN DEVELOPMENT",
+    "number": "39",
+    "title": "Hybrid SaaS & White-Label Deployment",
+    "summary": "Organization boundaries exist in the data model today. What's ahead: systemically enforced tenant isolation across every backend object, customer-hosted deployment options, and white-label branding — in that order, isolation first. Isolation, deployment options, and branding — in that specific order, deliberately.",
+    "sections": [
+      {
+        "label": "01 · IN PLAIN TERMS",
+        "title": "What It Is",
+        "bullets": [
+          "Organization boundaries exist in the data model today. What's ahead: systemically enforced tenant isolation across every backend object, customer-hosted deployment options, and white-label branding — in that order, isolation first.",
+          "Isolation, deployment options, and branding — in that specific order, deliberately."
+        ]
+      },
+      {
+        "label": "02 · BUSINESS OUTCOME",
+        "title": "Why It Matters",
+        "bullets": [
+          "Tenant boundaries existing in the data model is necessary but not sufficient — systemic enforcement across every object is what actually prevents cross-tenant leakage.",
+          "Isolation has to come before branding, deliberately — a white-labeled product on an unproven isolation layer would be selling a promise the backend can't yet keep."
+        ]
+      },
+      {
+        "label": "03 · HOW IT DELIVERS",
+        "title": "How It Works",
+        "bullets": [
+          "Would need a base model or manager enforcing org-scoping across every table, not opt-in per view."
+        ]
+      },
+      {
+        "label": "04 · CURRENT STATUS",
+        "title": "Where This Lives in the Platform",
+        "bullets": [
+          "In development",
+          "Tenant scoping is opt-in per view today, not systemically enforced — confirmed via code review.",
+          "No customer-hosted deployment option or white-label branding exists yet."
+        ]
+      }
+    ]
+  }
+]
